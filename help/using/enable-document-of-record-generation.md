@@ -10,10 +10,10 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Das Datensatzdokument verwendet eine Basisvorlage, um sein Layout zu definieren.
 
 Weitere Informationen finden Sie unter [Generieren von Datensatzdokumenten für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
 
-Der [Dienst „Automatische Formularkonvertierung“](/help/using/introduction.md) konvertiert die folgenden Quellformulare in adaptive Formulare:
+Die [Automated forms conversion-Dienst (AFCS)](/help/using/introduction.md) konvertiert die folgenden Quellformulare in adaptive Formulare:
 
 * nicht-interaktive PDF-Formulare
 * Acro Forms
@@ -87,7 +87,7 @@ Dieser Artikel beschreibt die empfohlenen Pfade zum Generieren eines Datensatzdo
 
 ## Generieren eines Datensatzdokuments für nicht-interaktive PDF-Formulare {#generate-document-of-record-non-interactive-pdf}
 
-Wenn Sie ein nicht-interaktives PDF-Formular als Quellformular für den Dienst zur automatischen Formularkonvertierung verwenden, haben Sie folgende Möglichkeiten:
+Wenn Sie ein nicht interaktives PDF-Formular als Quellformular für den Automated forms conversion-Dienst (AFCS) verwenden, haben Sie folgende Möglichkeiten:
 
 * Aktivieren Sie die Datensatzdokument-Generierung vor der Konvertierung des adaptiven Formulars, um das Datensatzdokument mithilfe einer Standardvorlage zu generieren
 * Bearbeiten Sie die Eigenschaften des adaptiven Formulars nach der Konvertierung des adaptiven Formulars, um die Datensatzdokument-Generierung mithilfe der Standard- oder einer anderen Formularvorlage zu aktivieren
@@ -121,7 +121,7 @@ Beim Senden des konvertierten adaptiven Formulars wird das Datensatzdokument aut
 
 ## Generierung eines Datensatzdokuments für Acro Forms oder XFA-basierte PDF-Formulare {#generate-document-of-record-acroform-xfaform}
 
-Wenn Sie ein Acro Form oder ein XFA-basiertes PDF-Formular als Quellformular für den Dienst zur automatischen Formularkonvertierung verwenden, haben Sie folgende Möglichkeiten:
+Wenn Sie ein Acro Form- oder XFA-basiertes PDF-Formular als Quellformular für den Automated forms conversion-Dienst (AFCS) verwenden, können Sie:
 
 * Aktivieren Sie die Datensatzdokument-Generierung vor der Konvertierung in ein adaptives Formular, um das Datensatzdokument mit dem Quellformular als Vorlage zu generieren
 

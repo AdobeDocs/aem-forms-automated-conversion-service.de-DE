@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung für den Dienst für die automatische Formularkonvertierung
+title: Fehlerbehebung für den Dienst für die automatische Formularkonvertierung (AFCS)
 description: Häufige AFCS-Probleme und ihre Lösungen
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,14 +9,14 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 100%
+source-wordcount: '657'
+ht-degree: 95%
 
 ---
 
-# Fehlerbehebung für den Dienst für die automatische Formularkonvertierung
+# Fehlerbehebung für den Dienst für die automatische Formularkonvertierung (AFCS)
 
 Das Dokument enthält grundlegende Schritte zur Fehlerbehebung bei häufigen Fehlern.
 
@@ -27,7 +27,7 @@ Das Dokument enthält grundlegende Schritte zur Fehlerbehebung bei häufigen Feh
 | Fehler | Beispiel |
 |--- |--- |
 | **Fehlermeldung** <br> Der Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br> **Grund** <br>Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in Adobe Cloud nicht erreichen. <br><br>**Lösung** <br> Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und [erstellen Sie eine neue Konfiguration](configure-service.md#obtainpubliccertificates). <br>Wenn es eine einzelne Konfiguration gibt, verwenden Sie die **Integritätsprüfung**, um die [Konnektivität](configure-service.md#createintegrationoption) zu überprüfen. | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configurations.png) |
-| **Fehlermeldung** <br> Es kann keine Verbindung zum Dienst hergestellt werden.  <br><br>**Grund** <br> In den Cloud-Diensten des Dienstes für die automatische Formularkonvertierung wird eine falsche oder keine Dienst-URL erwähnt. <br><br>**Lösung** <br> Korrekte [Dienst-URL](configure-service.md#configure-the-cloud-service) in den Cloud-Diensten des Dienstes für die automatische Formularkonvertierung. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/wrong-service-url-configured.png) |
+| **Fehlermeldung** <br> Es kann keine Verbindung zum Dienst hergestellt werden.  <br><br>**Grund** <br> In Automated forms conversion Service (AFCS) Cloud Services wird eine falsche Dienst-URL oder keine Dienst-URL erwähnt. <br><br>**Auflösung** <br> Richtig [Dienst-URL](configure-service.md#configure-the-cloud-service) in Automated forms conversion Service (AFCS) Cloud Services. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/wrong-service-url-configured.png) |
 | **Fehlermeldung** <br> Der Dienst konnte das Formular nicht konvertieren.  <br><br>**Grund** <br> Probleme mit der Netzwerkkonnektivität bei Ihnen, der Dienst ist aufgrund geplanter Wartung oder eines Ausfalls in Adobe Cloud nicht verfügbar. <br><br>**Lösung** <br> Beheben Sie Probleme mit Ihrer Netzwerkverbindung und überprüfen Sie den Status des Dienstes unter https://status.adobe.com/ auf einen geplanten oder ungeplanten Ausfall. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/conversion-failure.png) |
 | **Fehlermeldung** <br> Die Anzahl der Seiten ist größer als 15.  <br><br>**Grund** <br> Das Quellformular ist mehr als 15 Seiten lang.  <br><br>**Lösung** <br> Verwenden Sie Adobe Acrobat, um Formulare mit mehr als 15 Seiten zu teilen. Ein Formular darf nicht mehr als 15 Seiten umfassen. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/number-of-pages.png) |
 | **Fehlermeldung** <br> Die Anzahl der Seiten ist größer als 15.  <br><br>**Grund** <br>  Der Ordner enthält mehr als 15 Formulare. <br><br>**Lösung** <br> Stellen Sie sicher, dass die Anzahl der Formulare in einem Ordner kleiner als 15 ist. Halten Sie die Gesamtanzahl der Seiten in einem Ordner unter 50. Bringen Sie die Größe des Ordners auf weniger als 10 MB. Speichern Sie Formulare nicht in einem Unterordner. Organisieren Sie Quellformulare in einem Batch von 8-15 Formularen. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/number-of-pages.png) |
@@ -52,7 +52,7 @@ Das Dokument enthält grundlegende Schritte zur Fehlerbehebung bei häufigen Feh
 <td><img alt="The access token header is not available" src="assets/invalid-ims-configuration.png" /></td>
 </tr>
 <tr>
-<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service Cloud services.</td>
+<td><strong>Error Message</strong> <br> Unable to connect to the service.  <br><br><strong>Reason</strong> <br> Incorrect service URL or no service URL is mentioned in Automated Forms Conversion Service (AFCS) cloud services. <br><br><strong>Resolution</strong> <br> Correct <a href="configure-service.md#configure-the-cloud-service">Service URL</a> in Automated Forms Conversion Service (AFCS) Cloud services.</td>
 <td><img alt="Unable to connect to the service." src="assets/wrong-endpoint-configured.png" /></td>
 </tr>
 <tr>

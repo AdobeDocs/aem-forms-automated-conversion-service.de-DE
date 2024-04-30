@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 100%
+source-wordcount: '1672'
+ht-degree: 96%
 
 ---
 
 # Integrieren eines adaptiven Formulars mithilfe des AEM-Workflows in die Datenbank {#submit-forms-to-database-using-forms-portal}
 
-Mit dem Dienst zur automatischen Formularkonvertierung können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
+Mit dem automated forms conversion-Dienst (AFCS) können Sie ein nicht interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
 
 Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Für das Formulardatenmodell müssen Sie die Felder des adaptiven Formulars manuell mit dem Formulardatenmodell verknüpfen. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, ordnet der Konvertierungsdienst die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden. Ebenso können Sie nach erfolgreicher Integration in die Datenbank Felder im konvertierten adaptiven Formular konfigurieren, um Werte aus der Datenbank abzurufen und Felder des adaptiven Formulars vorab auszufüllen.
 
@@ -43,7 +43,7 @@ Sie können das Beispiel-Kontaktformular herunterladen mit:
 
 [Datei abrufen](assets/sample_contact_us_form.pdf)
 
-Die PDF-Datei dient als Eingabe für den Dienst zur automatischen Formularkonvertierung. Der Dienst konvertiert diese Datei in ein adaptives Formular. Das folgende Bild zeigt das Beispiel eines Kontaktformulars im PDF-Format.
+Die PDF-Datei dient als Eingabe für den Automated forms conversion-Dienst (AFCS). Der Dienst konvertiert diese Datei in ein adaptives Formular. Das folgende Bild zeigt das Beispiel eines Kontaktformulars im PDF-Format.
 
 ![Beispielformular für einen Kreditantrag](assets/sample_contact_us_form.png)
 
@@ -184,7 +184,7 @@ Sie können das Beispiel-Formulardatenmodell wie folgt herunterladen:
 
 ## Generieren adaptiver Formulare mit JSON-Bindung {#generate-adaptive-forms-with-json-binding}
 
-Verwenden Sie den [Dienst für die automatische Formularkonvertierung](convert-existing-forms-to-adaptive-forms.md) zum Konvertieren des [Kontaktformulars](#sample-adaptive-form) in ein adaptives Formular mit Datenbindung. Stellen Sie sicher, dass Sie nicht das Kontrollkästchen **[!UICONTROL Adaptive(s) Formular(e) ohne Datenbindungen generieren]** aktivieren, während das adaptive Formular generiert wird.
+Verwenden Sie die [Automated forms conversion-Dienst (AFCS) zum Konvertieren](convert-existing-forms-to-adaptive-forms.md) die [Kontaktformular](#sample-adaptive-form) in ein adaptives Formular mit Datenbindung. Stellen Sie sicher, dass Sie nicht das Kontrollkästchen **[!UICONTROL Adaptive(s) Formular(e) ohne Datenbindungen generieren]** aktivieren, während das adaptive Formular generiert wird.
 
 ![Adaptives Formular mit JSON-Bindung](assets/generate_af_with_data_bindings.png)
 

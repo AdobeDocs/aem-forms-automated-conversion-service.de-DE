@@ -1,6 +1,6 @@
 ---
 title: Best Practices und Hinweise
-description: Best Practices und Hinweise zum Dienst für die automatisierte Formularkonvertierung
+description: Best Practices und Überlegungen zum Automated forms conversion-Service (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 100%
+source-wordcount: '1229'
+ht-degree: 96%
 
 ---
 
 # Best Practices und bekannte komplexe Muster {#Best-practices-and-considerations2}
 
-Dieses Dokument enthält Richtlinien und Empfehlungen, von denen Formularadministratoren, Autoren und Entwickler profitieren können, wenn sie mit [!DNL Automated Forms Conversion service] arbeiten. Es werden bewährte Methoden erläutert, die von der Vorbereitung der Quellformulare bis zur Korrektur komplexer Muster reichen und für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese bewährten Methoden tragen zusammen zur Gesamtleistung und Ausgabe des [!DNL Automated Forms Conversion service] bei.
+Dieses Dokument enthält Richtlinien und Empfehlungen, von denen Formularadministratoren, Autoren und Entwickler profitieren können, wenn sie mit [!DNL Automated Forms Conversion service] (AFCS). Es werden bewährte Methoden erläutert, die von der Vorbereitung der Quellformulare bis zur Korrektur komplexer Muster reichen und für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese Best Practices tragen zusammen zur Gesamtleistung und Ausgabe der [!DNL Automated Forms Conversion service] (AFCS).
 
 ## Best Practices
 

@@ -1,6 +1,6 @@
 ---
 title: Erweitern des Standardmetamodells
-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind, und Konfigurationen auf adaptive Formularfelder anzuwenden, während Sie den Dienst für die automatische Formularkonvertierung ausführen.
+description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihr Unternehmen spezifisch sind, und Konfigurationen auf adaptive Formularfelder anzuwenden, während Sie den Automated forms conversion-Dienst (AFCS) ausführen.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 100%
+source-wordcount: '2598'
+ht-degree: 91%
 
 ---
 
 # Erweitern des Standardmetamodells {#extend-the-default-meta-model}
 
-Der Dienst zur automatischen Formularkonvertierung identifiziert und extrahiert Formularobjekte aus Quellformularen. Semantic Mapper hilft dem Dienst zu entscheiden, wie die extrahierten Objekte in einem adaptiven Formular dargestellt werden. Beispielsweise kann ein Quellformular viele verschiedene Arten von Darstellungen eines Datums enthalten. Der Semantic Mapper hilft dabei, alle Darstellungen von Datumsformularobjekten des Quellformulars der Datumskomponente der adaptiven Formulare zuzuordnen. Mit Semantic Mapper kann der Dienst auch Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfeeigenschaften während der Konvertierung vorkonfigurieren und auf adaptive Formularkomponenten anwenden.
+Der automated forms conversion-Dienst (AFCS) identifiziert und extrahiert Formularobjekte aus Quellformularen. Semantic Mapper hilft dem Dienst zu entscheiden, wie die extrahierten Objekte in einem adaptiven Formular dargestellt werden. Beispielsweise kann ein Quellformular viele verschiedene Arten von Darstellungen eines Datums enthalten. Der Semantic Mapper hilft dabei, alle Darstellungen von Datumsformularobjekten des Quellformulars der Datumskomponente der adaptiven Formulare zuzuordnen. Mit Semantic Mapper kann der Dienst auch Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfeeigenschaften während der Konvertierung vorkonfigurieren und auf adaptive Formularkomponenten anwenden.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter:  http://&lt;Server>:&lt;Port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) kann ebenfalls heruntergeladen werden.
+Der automated forms conversion-Dienst (AFCS) verfügt über ein Standardmetamodell. Es handelt sich um ein JSON-Schema, das zusammen mit anderen Komponenten des Automated forms conversion-Service (AFCS) auf der Adobe Cloud gespeichert ist. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) kann ebenfalls heruntergeladen werden.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
@@ -120,7 +120,7 @@ In diesem Beispiel sucht der Konvertierungsdienst im Quellformular nach den Schl
 
 ### JSON-Schemaeigenschaften für generierte adaptive Formularfelder {#jsonschemaproperties}
 
-Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Schemas für Felder in adaptiven Formularen, die mit dem Dienst für die automatische Formularkonvertierung generiert wurden:
+Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Schemas für adaptive Formularfelder, die mit dem Automated forms conversion-Dienst (AFCS) generiert wurden:
 
 <table> 
  <tbody> 
@@ -164,7 +164,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
 
 ### Schlüsselwortbasierte Suche zum Anwenden von Eigenschaften auf Felder im generierten adaptiven Formular {#keywordsearch}
 
-Der Dienst zur automatischen Formularkonvertierung führt während der Konvertierung eine Schlüsselwortsuche im Quellformular durch. Nach dem Filtern der Felder, die die Suchkriterien erfüllen, wendet der Konvertierungsdienst die für diese Felder im Metamodell definierten Eigenschaften auf die Felder im generierten adaptiven Formular an.
+Der automated forms conversion-Dienst (AFCS) führt während der Konvertierung eine Suchbegriffsuche im Quellformular durch. Nach dem Filtern der Felder, die die Suchkriterien erfüllen, wendet der Konvertierungsdienst die für diese Felder im Metamodell definierten Eigenschaften auf die Felder im generierten adaptiven Formular an.
 
 Auf Schlüsselwörter wird mit der Eigenschaft **aem:affKeyword** verwiesen.
 
@@ -181,7 +181,7 @@ In diesem Beispiel verwendet der Konvertierungsdienst den Text in **aem:affKeywo
 
 ### Zusätzliche Eigenschaften für Felder im generierten adaptiven Formular {#additionalproperties}
 
-Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden zusätzlichen Eigenschaften für adaptive Formularfelder definieren, die mit dem Dienst für die automatische Formularkonvertierung generiert wurden:
+Sie können die **aem:afProperties** -Eigenschaft im Metamodell, um die folgenden zusätzlichen Eigenschaften für adaptive Formularfelder zu definieren, die mit dem Automated forms conversion-Dienst (AFCS) generiert wurden:
 
 <table> 
  <tbody> 
@@ -217,7 +217,7 @@ Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden
 
 ## Erstellen eines benutzerdefinierten Metamodells in Ihrer eigenen Sprache {#language-specific-meta-model}
 
-Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metamodell können Sie Zuordnungsregeln in der Sprache Ihrer Wahl erstellen. Mit dem Service für die automatische Formularkonvertierung können Sie Metamodelle in den folgenden Sprachen erstellen:
+Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metamodell können Sie Zuordnungsregeln in der Sprache Ihrer Wahl erstellen. Mit dem automated forms conversion-Dienst (AFCS) können Sie Metamodelle in den folgenden Sprachen erstellen:
 
 * Englisch (en)
 * Französisch (fr)
@@ -258,9 +258,9 @@ Die folgende Abbildung zeigt Beispiele für das englische Metamodell und das ent
 
 ## Ändern von Feldern in adaptiven Formularen mit benutzerdefiniertem Metamodell {#modify-adaptive-form-fields-using-custom-meta-model}
 
-Ihre Organisation kann Muster und Überprüfungen zusätzlich zu den im Standardmetamodell aufgeführten aufweisen. Sie können das Standardmetamodell erweitern, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind. Der Dienst für die automatische Formularkonvertierung wendet das benutzerdefinierte Metamodell während der Konvertierung auf die Formularfelder an. Sie können das Metamodell ständig aktualisieren, wenn neue Muster, Validierungen und Entitäten entdeckt werden, die für Ihre Organisation spezifisch sind.
+Ihre Organisation kann Muster und Überprüfungen zusätzlich zu den im Standardmetamodell aufgeführten aufweisen. Sie können das Standardmetamodell erweitern, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind. Der automated forms conversion-Dienst (AFCS) wendet das benutzerdefinierte Metamodell während der Konvertierung auf die Formularfelder an. Sie können das Metamodell ständig aktualisieren, wenn neue Muster, Validierungen und Entitäten entdeckt werden, die für Ihre Organisation spezifisch sind.
 
-Der Dienst für die automatische Formularkonvertierung verwendet ein Standardmetamodell, um während der Konvertierung die Felder des Quellformulars Feldern des adaptiven Formulars zuzuordnen. Das Standardmetamodell befindet sich unter dem folgenden Speicherort:
+Der automated forms conversion-Dienst (AFCS) verwendet ein Standardmetamodell, das am folgenden Speicherort gespeichert ist, um Quellformularfelder während der Konvertierung den Feldern des adaptiven Formulars zuzuordnen:
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 

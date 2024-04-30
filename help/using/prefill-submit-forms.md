@@ -1,6 +1,6 @@
 ---
 title: Empfohlene datenquellenbasierte Vorfüll- und Übermittlungsarbeitsabläufe für adaptive Formulare
-description: Arbeitsabläufe zum datenquellenbasierten Vorfüllen und Senden für adaptive Formulare, die mit dem Dienst für die automatische Formularkonvertierung erstellt wurden.
+description: Datenquellenbasierte Vorfüll- und Übermittlungsarbeitsabläufe für adaptive Formulare, die mit dem Automated forms conversion Service (AFCS) generiert wurden.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,16 +9,16 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 100%
+source-wordcount: '2534'
+ht-degree: 85%
 
 ---
 
 # Empfohlene datenquellenbasierte Vorfüll- und Übermittlungs-Workflows für adaptive Formulare {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-Sie können eine der folgenden Datenquellen mit adaptiven Formularen verwenden, die mit dem Dienst für die automatische Formularkonvertierung konvertiert wurden:
+Sie können eine der folgenden Datenquellen mit adaptiven Formularen verwenden, die mithilfe des Automated forms conversion-Dienstes (AFCS) konvertiert wurden:
 
 * Formulardatenmodell, OData oder andere Dienste von Drittanbietern
 * JSON-Schema
@@ -37,12 +37,12 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr> 
    <td><p>Formulardatenmodell, OData oder andere Dienste von Drittanbietern</p></td> 
    <td> 
-    <p><strong>Option 1</strong>: Sie wählen ein Formulardatenmodell, OData oder einen anderen Drittanbieter-Dienst als Datenquelle aus. Sie <a href="#generate-adaptive-forms-with-no-data-binding">generieren ein adaptives Formular ohne Datenbindung</a> unter Verwendung des Dienstes für die automatische Formularkonvertierung. Sie binden die adaptiven Formularfelder manuell an Entitäten des Formulardatenmodells und verwenden die Option „Vorfüllservice für Formulardatenmodell“, um Feldwerte vorab auszufüllen. Verwenden Sie die Option „Senden mit Formulardatenmodell“, um das adaptive Formular zu senden.</p></td> 
+    <p><strong>Option 1</strong>: Sie wählen ein Formulardatenmodell, OData oder einen anderen Drittanbieter-Dienst als Datenquelle aus. You <a href="#generate-adaptive-forms-with-no-data-binding">Erstellen eines adaptiven Formulars ohne Datenbindung</a> Verwendung des Automated forms conversion-Dienstes (AFCS). Sie binden die adaptiven Formularfelder manuell an Entitäten des Formulardatenmodells und verwenden die Option „Vorfüllservice für Formulardatenmodell“, um Feldwerte vorab auszufüllen. Verwenden Sie die Option „Senden mit Formulardatenmodell“, um das adaptive Formular zu senden.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Option 2</strong>: Sie wählen Formulardatenmodell, OData oder einen anderen Drittanbieter-Dienst als Datenquelle aus. Sie <a href="#generate-adaptive-forms-with-no-data-binding">generieren ein adaptives Formular ohne Datenbindung</a> unter Verwendung des Dienstes für die automatische Formularkonvertierung. Sie binden die adaptiven Formularfelder mithilfe des Regeleditors, um Feldwerte vorab auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
+   <p><strong>Option 2</strong>: Sie wählen Formulardatenmodell, OData oder einen anderen Drittanbieter-Dienst als Datenquelle aus. You <a href="#generate-adaptive-forms-with-no-data-binding">Erstellen eines adaptiven Formulars ohne Datenbindung</a> Verwendung des Automated forms conversion-Dienstes (AFCS). Sie binden die adaptiven Formularfelder mithilfe des Regeleditors, um Feldwerte vorab auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
     </td> 
   </tr>
   <tr> 
@@ -58,7 +58,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 1</strong>: Sie <a href="#generate-adaptive-forms-with-no-data-binding">generieren ein adaptives Formular ohne Datenbindung</a> unter Verwendung des Dienstes für die automatische Formularkonvertierung und konfigurieren ein JSON-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das JSON-Schema und <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p></td> 
+    <p><strong>Option 1</strong>: Sie <a href="#generate-adaptive-forms-with-no-data-binding">Erstellen eines adaptiven Formulars ohne Datenbindung</a> Verwendung des Automated forms conversion-Dienstes (AFCS) und Konfigurieren des JSON-Schemas als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das JSON-Schema und <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -68,7 +68,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 2</strong>: Sie <a href="#generate-adaptive-forms-with-json-binding">generieren ein adaptives Formular mit JSON-Datenbindung</a> unter Verwendung des Dienstes für die automatische Formularkonvertierung. Die Funktionen zum Vorausfüllen und zum Senden funktionieren nahtlos. Sie benötigen keine Konfigurationsschritte.</p> </td> 
+    <p><strong>Option 2</strong>: Sie <a href="#generate-adaptive-forms-with-json-binding">Erstellen eines adaptiven Formulars mit JSON-Datenbindung</a> Verwendung des Automated forms conversion-Dienstes (AFCS). Die Funktionen zum Vorausfüllen und zum Senden funktionieren nahtlos. Sie benötigen keine Konfigurationsschritte.</p> </td> 
   </tr>
    <tr>
   <td></td> 
@@ -78,7 +78,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td><p>XSD-Schema</p></td> 
    <td> 
-    <p>Sie wählen XSD-Schema als Datenquelle aus. Basierend auf der ausgewählten Datenquelle <a href="#generate-adaptive-forms-with-no-data-binding">erstellen Sie mit dem Dienst für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung</a> und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
+    <p>Sie wählen XSD-Schema als Datenquelle aus. Basierend auf der ausgewählten Datenquelle <a href="#generate-adaptive-forms-with-no-data-binding">Erstellen eines adaptiven Formulars ohne Datenbindung</a> Verwenden des Automated forms conversion-Dienstes (AFCS) und Konfigurieren des XSD-Schemas als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
     </td> 
   </tr>
   <tr>
@@ -91,7 +91,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
 </table>
 
 
-Weitere Informationen zum Dienst für die automatische Formularkonvertierung finden Sie in den folgenden Artikeln:
+Weitere Informationen zum Automated forms conversion-Dienst (AFCS) finden Sie in den folgenden Artikeln:
 
 * [Einführung in den Dienst für die automatische Formularkonvertierung (AFCS)](introduction.md)
 * [Konfigurieren des Dienstes für die automatische Formularkonvertierung](configure-service.md)
@@ -103,7 +103,7 @@ Den Informationen in diesem Artikel liegt die Annahme zugrunde, dass alle, die i
 ## Voraussetzungen {#pre-requisites}
 
 * Konfigurieren einer [AEM-Autoreninstanz](https://helpx.adobe.com/de/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Konfigurieren des [Dienstes für die automatische Formularkonvertierung in der AEM-Autoreninstanz](configure-service.md)
+* Konfigurieren [Automated forms conversion-Dienst (AFCS) in der AEM-Autoreninstanz](configure-service.md)
 
 ## Beispiel für ein adaptives Formular {#sample-adaptive-form}
 
@@ -113,7 +113,7 @@ Beispielformular für einen Kreditantrag
 
 [Datei abrufen](assets/sample_loan_application_form.pdf)
 
-Die PDF-Datei dient als Eingabe für den Dienst zur automatischen Formularkonvertierung. Der Dienst konvertiert diese Datei in ein adaptives Formular. Das folgende Bild zeigt das Beispiel eines Kreditantrags im PDF-Format.
+Die PDF-Datei dient als Eingabe für den Automated forms conversion-Dienst (AFCS). Der Dienst konvertiert diese Datei in ein adaptives Formular. Das folgende Bild zeigt das Beispiel eines Kreditantrags im PDF-Format.
 
 ![Beispielformular für einen Kreditantrag](assets/sample_form_new.png)
 
@@ -236,12 +236,12 @@ Wählen Sie nach dem Generieren eines adaptiven Formulars ohne Datenbindung eine
 * [XSD-Schema](#xsddatasource)
 
 >[!NOTE]
-> Wenn das adaptive Formular, das Sie mit dem Dienst für die automatische Formularkonvertierung konvertieren, mehrere Felder mit demselben Namen enthält, stellen Sie sicher, dass diese Felder an Datenquellenentitäten gebunden sind, um einen möglichen Datenverlust während der Übermittlung zu vermeiden.
+> Wenn das adaptive Formular, das Sie mit dem Automated forms conversion-Dienst (AFCS) konvertieren, mehrere Felder mit demselben Namen enthält, stellen Sie sicher, dass diese Felder an Datenquellenentitäten gebunden sind, um einen möglichen Datenverlust während der Übermittlung zu vermeiden.
 >
 
 ### Verwenden einer Datenbank, von OData oder beliebigen Drittanbieter-Diensten als Datenquelle {#sqldatasource}
 
-Anwendungsfall: Sie generieren unter Verwendung des Dienstes für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung und konfigurieren die MYSQL-Datenbank als Datenquelle. Sie binden die adaptiven Formularfelder manuell an Entitäten des Formulardatenmodells und verwenden die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**, um Feldwerte vorab auszufüllen. Verwenden Sie die Option **[!UICONTROL Senden mit Formulardatenmodell]**, um das adaptive Formular zu senden.
+Anwendungsfall: Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Automated forms conversion-Dienstes (AFCS) und konfigurieren die MYSQL-Datenbank als Datenquelle. Sie binden die adaptiven Formularfelder manuell an Entitäten des Formulardatenmodells und verwenden die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**, um Feldwerte vorab auszufüllen. Verwenden Sie die Option **[!UICONTROL Senden mit Formulardatenmodell]**, um das adaptive Formular zu senden.
 
 Vor dem Ausführen des Anwendungsfalls:
 
@@ -281,7 +281,7 @@ Führen Sie die folgenden Schritte aus:
 1. Tippen Sie auf **[!UICONTROL Vorschau]**, um die vorausgefüllten Feldwerte des adaptiven Formulars anzuzeigen.
 1. Ändern Sie gegebenenfalls die Feldwerte und senden Sie das adaptive Formular. Die Feldwerte werden an die MySQL-Datenbank gesendet. Sie können die Tabelle **applicant** in der Datenbank aktualisieren, um die aktualisierten Werte in der Tabelle anzuzeigen.
 
-**Anwendungsfall**: Sie generieren unter Verwendung des Dienstes für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung und konfigurieren die MYSQL-Datenbank als Datenquelle. Sie binden die adaptiven Formularfelder mithilfe des Regeleditors, um Feldwerte vorab auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
+**Anwendungsbeispiel:** Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Automated forms conversion-Dienstes (AFCS) und konfigurieren die MYSQL-Datenbank als Datenquelle. Sie binden die adaptiven Formularfelder mithilfe des Regeleditors, um Feldwerte vorab auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
 
 Führen Sie die folgenden Schritte aus, um mit dem [Regeleditor](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/rule-editor.html) den Formulardatenmodell-Dienst aufzurufen, um in einem adaptiven Formular Felder zu binden und Werte vorzufüllen:
 
@@ -323,7 +323,7 @@ Führen Sie die folgenden Schritte aus, um mit dem [Regeleditor](https://helpx.a
 
 ### Verwenden eines JSON-Schemas als Datenquelle {#jsondatasource}
 
-**Anwendungsfall**: Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung und konfigurieren das JSON-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das JSON-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
+**Anwendungsbeispiel:** Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Automated forms conversion-Dienstes (AFCS) und konfigurieren das JSON-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das JSON-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
 
 Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über Folgendes verfügen:
 
@@ -351,7 +351,7 @@ Führen Sie die folgenden Schritte aus:
 
 ### Verwenden eines XSD-Schemas als Datenquelle {#xsddatasource}
 
-**Anwendungsfall**: Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
+**Anwendungsbeispiel:** Sie generieren ein adaptives Formular ohne Datenbindung mithilfe des Automated forms conversion-Dienstes (AFCS) und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
 
 Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über Folgendes verfügen:
 
@@ -379,13 +379,13 @@ Wählen Sie im Feld „Bindungsverweis“ die Option **Antragsteller** > **Name*
 
 ## Generieren adaptiver Formulare mit JSON-Bindung {#generate-adaptive-forms-with-json-binding}
 
-Verwenden Sie den [Dienst für die automatische Formularkonvertierung](convert-existing-forms-to-adaptive-forms.md) zum Konvertieren des [Beispielformulars für einen Kreditantrag](#sample-adaptive-form) in ein adaptives Formular mit Datenbindung. Stellen Sie sicher, dass Sie nicht das Kontrollkästchen **[!UICONTROL Adaptive(s) Formular(e) ohne Datenbindungen generieren]** aktivieren, während das adaptive Formular generiert wird.
+Verwenden Sie die [Automated forms conversion-Dienst (AFCS) zum Konvertieren](convert-existing-forms-to-adaptive-forms.md) die [Beispielformular für einen Kreditantrag](#sample-adaptive-form) in ein adaptives Formular mit Datenbindung. Stellen Sie sicher, dass Sie nicht das Kontrollkästchen **[!UICONTROL Adaptive(s) Formular(e) ohne Datenbindungen generieren]** aktivieren, während das adaptive Formular generiert wird.
 
 ![Adaptives Formular mit JSON-Bindung](assets/generate_af_with_data_bindings.png)
 
 ### Verwenden eines JSON-Schemas als Datenquelle {#jsonwithdatabinding}
 
-**Anwendungsfall**: Sie generieren ein adaptives Formular mit JSON-Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung. Die Funktionen zum Vorausfüllen und zum Senden funktionieren nahtlos. Sie benötigen keine Konfigurationsschritte.
+**Anwendungsbeispiel:** Sie generieren ein adaptives Formular mit JSON-Datenbindung unter Verwendung des Automated forms conversion-Dienstes (AFCS). Die Funktionen zum Vorausfüllen und zum Senden funktionieren nahtlos. Sie benötigen keine Konfigurationsschritte.
 
 Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über ein [adaptives Formular mit Datenbindung verfügen](#generate-adaptive-forms-with-json-binding).
 

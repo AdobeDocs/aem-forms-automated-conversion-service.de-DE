@@ -1,6 +1,6 @@
 ---
 title: Überprüfen und Korrigieren konvertierter Formulare
-description: Überprüfen und korrigieren Sie die vom Automated forms conversion-Dienst (AFCS) konvertierten adaptiven Formulare.
+description: Überprüfen und korrigieren Sie die vom Dienst für die automatisierte Formularkonvertierung (AFCS) konvertierten adaptiven Formulare.
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2563'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Überprüfen und Korrigieren konvertierter Formulare{#review-and-correct-converted-forms}
 
-Der AEM Forms Automated forms conversion-Dienst (AFCS) identifiziert Felder, Inhalte und Layout des Eingabedokuments und konvertiert das PDF-PDF-Dokument in ein adaptives Formular. Das adaptive Ausgabeformular kann einige fehlende oder nicht ordnungsgemäß konvertierte Felder enthalten. Sie können mithilfe des Editors „Überprüfen und Korrigieren“ Verbesserungen an identifizierten Feldern vornehmen und das adaptive Formular neu generieren, um ein Ergebnis zu erhalten, das Ihren Erwartungen näher kommt. Nach der ersten Konvertierung können Sie das eingegebene PDF-Dokument im Editor öffnen, um:
+Der Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms identifiziert Felder, Inhalt und Layout des eingegebenen PDF-Dokuments und konvertiert das PDF-Dokument in ein adaptives Formular. Das adaptive Ausgabeformular kann einige fehlende oder nicht ordnungsgemäß konvertierte Felder enthalten. Sie können mithilfe des Editors „Überprüfen und Korrigieren“ Verbesserungen an identifizierten Feldern vornehmen und das adaptive Formular neu generieren, um ein Ergebnis zu erhalten, das Ihren Erwartungen näher kommt. Nach der ersten Konvertierung können Sie das eingegebene PDF-Dokument im Editor öffnen, um:
 
 * alle Felder und Inhalte anzuzeigen, die während der Konvertierung identifiziert wurden
 * die Felder und Inhalte zu identifizieren, die während der Konvertierung übersehen wurden

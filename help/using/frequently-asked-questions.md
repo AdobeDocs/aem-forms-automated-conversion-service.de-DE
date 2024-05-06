@@ -9,20 +9,20 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1791'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Häufig gestellte Fragen{#frequently-asked-questions}
 
-1. **Welche Version von AEM Forms unterstützt der Automated forms conversion-Dienst (AFCS)?**
-   <p>Automated forms conversion-Dienst (AFCS) unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM Forms unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
+1. **Welche Version von AEM Forms wird vom Dienst für die automatisierte Formularkonvertierung (AFCS) unterstützt?**
+   <p>Der Dienst für die automatisierte Formularkonvertierung (AFCS) unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM Forms unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
     <br>
 
 1. **Kann der Dienst vor Ort installiert werden?**
-   <p>Adobe trainiert regelmäßig AI- und ML-Algorithmen des Automated forms conversion-Service (AFCS) mit neuen Datensätzen, um die Konversionsgenauigkeit zu verbessern. Die aktualisierten Algorithmen werden in regelmäßigen Abständen für den in Adobe Cloud ausgeführten Konvertierungsdienst bereitgestellt. Alle Kunden des Dienstes profitieren von den aktualisierten Algorithmen. Die Cloud-gehostete zentrale Bereitstellung eignet sich daher am besten für Automated forms conversion-Service (AFCS), um kontinuierlich zu lernen und Verbesserungen für alle Kunden bereitzustellen.</p> 
+   <p>Adobe schult regelmäßig KI- und ML-Algorithmen des Dienstes für die automatisierte Formularkonvertierung (AFCS) mit neuen Daten, um die Konvertierungsgenauigkeit zu verbessern. Die aktualisierten Algorithmen werden in regelmäßigen Abständen für den in Adobe Cloud ausgeführten Konvertierungsdienst bereitgestellt. Alle Kunden des Dienstes profitieren von den aktualisierten Algorithmen. Die in der Cloud gehostete zentrale Bereitstellung eignet sich daher am besten für den Dienst für die automatisierte Formularkonvertierung (AFCS), da so kontinuierliches Lernen und Verbesserungen für alle Kundinnen und Kunden sichergestellt werden.</p> 
     <p>Der Dienst konvertiert leere Formulare in adaptive Formulare. Der Dienst unterstützt keine ausgefüllten Formulare und das Extrahieren von Daten aus ausgefüllten Formularen. Entfernen Sie Daten aus ausgefüllten Formularen und entfernen oder schützen Sie proprietäre Informationen aus den Formularen, bevor Sie die Formulare zur Konvertierung an den Dienst senden</p> <br>
 
 1. **Unterstützt der Dienst alle Formate von PDF-Formularen? Werden alle Sprachen unterstützt?**
@@ -83,7 +83,7 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
    <p>Der Dienst konvertiert Skripte von XFA-basierten Formularen oder Acro Forms nicht automatisch in entsprechende adaptive Formularregeln. Sie (Formular-Autoren) können den <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/rule-editor.html">Regeleditor</a> verwenden, um Interaktivität zu einem adaptiven Formular hinzuzufügen.</p> <br>
 
 1. **Einige Formularobjekte werden nicht korrekt in adaptive Formularkomponenten konvertiert. Wie kann das Problem gelöst werden?**
-   <p>Der automated forms conversion-Dienst (AFCS) ist auf eine Vielzahl von Formularen geschult. AI/ML-basierte Anwendungen sind jedoch durch ihre Trainingsdaten und -muster begrenzt. Es kann mehrere Feldtypen, Layouts, Muster und Kontexte geben, die für die menschliche Wahrnehmung erkennbar sind, für die eine automatische Erkennung jedoch schwierig ist. Der Dienst kann solche Objekte möglicherweise nicht identifizieren oder falsch erkennen. Sie können den Editor <a href="review-correct-ui-edited.md" target="_blank">Überprüfen und Korrigieren</a> verwenden, um die erforderlichen Änderungen im vertrauten papierformularbasierten Layout des Eingabeformulars vorzunehmen.</p> <br/>
+   <p>Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird für eine Vielzahl von Formularen geschult. AI/ML-basierte Anwendungen sind jedoch durch ihre Trainingsdaten und -muster begrenzt. Es kann mehrere Feldtypen, Layouts, Muster und Kontexte geben, die für die menschliche Wahrnehmung erkennbar sind, für die eine automatische Erkennung jedoch schwierig ist. Der Dienst kann solche Objekte möglicherweise nicht identifizieren oder falsch erkennen. Sie können den Editor <a href="review-correct-ui-edited.md" target="_blank">Überprüfen und Korrigieren</a> verwenden, um die erforderlichen Änderungen im vertrauten papierformularbasierten Layout des Eingabeformulars vorzunehmen.</p> <br/>
 
 1. **Einige Korrekturen werden formularübergreifend wiederholt. Kann der Dienst alle derartigen Instanzen in zukünftigen Konvertierungen identifizieren und beheben?**
 
@@ -114,8 +114,8 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
 1. **Wie kann die Groß-/Kleinschreibung eines adaptiven Formulartextes automatisch geändert werden?**
    <p>Sie können den adaptiven Design- oder Stileditor für adaptive Formulare verwenden, um die Groß-/Kleinschreibung eines Felds in einem adaptiven Formular zu ändern. Sie können beispielsweise den Design-Editor öffnen und den Wert der Groß-/Kleinschreibungs-Eigenschaft des gesamten Formulartextes auf Groß-, Klein- oder Höckerschreibweise setzen. Sie können auch die Option CSS-Überschreibung im Design-Editor verwenden, um verschiedene Arten von Stilen zu erstellen.</p>
 
-1. **Kann ich Adobe Sign-Text-Tags mit dem Automated forms conversion-Service (AFCS) verwenden?**
-   <p> Wenn Sie Automated forms conversion Service (AFCS) verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren und das PDF-Formular über Adobe Sign-Text-Tags verfügt, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterzeichnerdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
+1. **Kann ich Adobe Sign-Text-Tags mit dem Dienst zur automatischen Formularkonvertierung (AFCS) verwenden?**
+   <p> Wenn Sie den Dienst zur automatisierten Formularkonvertierung (AFCS) verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterzeichnerdetails werden automatisch ausgefüllt. Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
 
 1. **Wie erstellt man ein für Adobe Sign aktivierten PDF-Formular?**
    </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>

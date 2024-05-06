@@ -1,6 +1,6 @@
 ---
 title: Bekannte Probleme
-description: bekannte Probleme und Einschränkungen für Automated forms conversion Service (AFCS)
+description: bekannte Probleme und Einschränkungen beim Dienst für die automatisierte Formularkonvertierung (AFCS)
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,15 +9,15 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '795'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Bekannte Probleme und Einschränkungen {#known-issues-limitations}
 
-Bevor Sie mit der Verwendung des AEM Forms Automated forms conversion-Dienstes (AFCS) beginnen, überprüfen Sie die folgenden bekannten Probleme und Einschränkungen:
+Überprüfen Sie die folgenden bekannten Probleme und Einschränkungen, bevor Sie mit der Verwendung des Dienstes für die automatisierte Formularkonvertierung (AFCS) von AEM Forms beginnen:
 
 ## Bekannte Probleme {#known-issues}
 

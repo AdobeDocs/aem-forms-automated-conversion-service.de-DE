@@ -1,28 +1,28 @@
 ---
 title: Konvertieren von PDF-Formularen in adaptive Formulare
 seo-title: Convert PDF forms to adaptive forms
-description: Führen Sie den Automated forms conversion-Dienst (AFCS) aus, um PDF forms in adaptive Formulare zu konvertieren.
+description: Ausführen des Dienstes für die automatisierte Formularkonvertierung (AFCS), um PDF-Formulare in adaptive Formulare zu konvertieren
 seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1725'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der AEM Forms Automated forms conversion-Dienst (AFCS) mit Adobe Sensei konvertiert Ihre PDF forms automatisch in gerätefreundliche und responsive adaptive Formulare. Unabhängig davon, ob Sie nicht interaktive PDF forms, Acro Forms oder XFA-basierte PDF forms verwenden, kann der Automated forms conversion-Dienst (AFCS) diese Formulare einfach in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatische Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatisierte Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 
 * [**Konvertierungsdienst konfigurieren**](configure-service.md)
 
-* **Bereiten Sie die [Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html) vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Automated forms conversion-Dienst (AFCS) keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet. Wenn Sie einen Ordner für die Vorlagen erstellen, wählen Sie für alle die Option **[!UICONTROL Konfigurationen durchsuchen]**.
+* **Bereiten Sie die [Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html) vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatisierte Formularkonvertierung (AFCS) keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet. Wenn Sie einen Ordner für die Vorlagen erstellen, wählen Sie für alle die Option **[!UICONTROL Konfigurationen durchsuchen]**.
 
 * **Bereiten Sie die [Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html) vor, die auf konvertierte Formulare angewendet werden sollen:** Mit einem Design können Sie einen einheitlichen Stil auf alle adaptiven Formulare Ihrer Organisation anwenden.
 

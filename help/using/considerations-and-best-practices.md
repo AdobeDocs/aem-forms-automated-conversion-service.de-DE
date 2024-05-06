@@ -9,9 +9,9 @@ discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
 source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 Der Dienst für die automatische Konvertierung von AEM Forms konvertiert ein PDF-Formular in ein adaptives Formular. Der Dienst verwendet künstliche Intelligenz und Algorithmen für maschinelles Lernen, um das Layout und die Felder des Quellformulars zu verstehen. Jeder auf maschinellem Lernen basierende Dienst lernt kontinuierlich aus den Quelldaten und liefert eine verbesserte Ausgabe. Diese Dienste lernen aus Erfahrung, genau wie Menschen.
 
-Der automated forms conversion-Dienst (AFCS) ist auf eine Vielzahl von Formularen geschult. Er erkennt problemlos Felder in einem Quellformular und erzeugt adaptive Formulare. Es gibt jedoch einige Felder und Stile in PDF-Formularen, die für das menschliche Auge leicht sichtbar, für den Dienst jedoch schwer zu verstehen sind. Der Dienst weist einigen Feldern oder Stilen eventuell andere als die zutreffenden Feldtypen oder Bedienfelder zu. Alle diese Feld- und Stilmuster sind nachfolgend aufgeführt.
+Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird für eine Vielzahl von Formularen geschult. Er erkennt problemlos Felder in einem Quellformular und erzeugt adaptive Formulare. Es gibt jedoch einige Felder und Stile in PDF-Formularen, die für das menschliche Auge leicht sichtbar, für den Dienst jedoch schwer zu verstehen sind. Der Dienst weist einigen Feldern oder Stilen eventuell andere als die zutreffenden Feldtypen oder Bedienfelder zu. Alle diese Feld- und Stilmuster sind nachfolgend aufgeführt.
 
 Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder Bedienfelder zuzuweisen, da er weiterhin aus den Quelldaten lernt. Derzeit können Sie den Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md) verwenden, um solche Probleme zu beheben. Machen Sie sich mit [adaptiven Formularkomponenten](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/introduction-forms-authoring.html) vertraut, bevor Sie mit der Behebung der Probleme beginnen oder weiterlesen.
 

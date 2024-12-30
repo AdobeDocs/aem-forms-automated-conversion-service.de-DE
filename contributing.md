@@ -1,13 +1,13 @@
 ---
 source-git-commit: 1cef5bea746a63d0c8f8819f919c75f5d6aa96e9
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 96%
+source-wordcount: '524'
+ht-degree: 95%
 
 ---
-# Beiträge zur Dokumentation des AEM Forms-Dienstes für die automatische Konvertierung
+# Beiträge zur Dokumentation zum Service für die automatisierte Konvertierung in AEM Forms
 
-Vielen Dank, dass Sie sich entschieden haben, zur Dokumentation zum automatisierten Konvertierungsdienst von AEM Forms beizutragen! Wir freuen uns über Inhaltsbeiträge unserer gesamten Reader-Community sowie unserer Kollegen von Adobe.
+Vielen Dank, dass Sie zur Dokumentation zum AEM Forms Automated Conversion Service beitragen möchten! Wir freuen uns über Inhaltsbeiträge unserer gesamten Reader-Community sowie unserer Kollegen von Adobe.
 
 In dieser Datei wird beschrieben, wie Sie Beiträge beisteuern können und welche Richtlinien zu befolgen sind, wenn Sie Ihre Beiträge vornehmen.
 
@@ -21,7 +21,7 @@ Wir freuen uns zwar über jeden Beitrag, um die AEM-Dokumentation zu verbessern,
 
 ## So können Sie einen Beitrag leisten
 
-Wir möchten es Ihnen so einfach wie möglich machen, Ihre Beiträge einzureichen. Es gibt zwei Möglichkeiten:
+Wir möchten es Ihnen so einfach wie möglich machen, Ihre Beiträge einzureichen. Sie können auf zwei Arten beitragen:
 
 * [Erstellen eines Problems](#create-an-issue)
 * [Erstellen einer Pull-Anfrage](#create-a-pull-request)

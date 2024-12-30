@@ -5,9 +5,9 @@ source-wordcount: '75'
 ht-degree: 77%
 
 ---
-# AEM Forms Automated Conversion Service Documentation
+# Dokumentation zum Service für die automatisierte Konvertierung in AEM Forms
 
-This is the repository for AEM Forms Automated Conversion Service documentation.
+Dies ist das Repository für die Dokumentation zum Service für automatisierte Konvertierung in AEM Forms.
 
 Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
 

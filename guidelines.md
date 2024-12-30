@@ -1,7 +1,7 @@
 ---
 source-git-commit: 5da9119f156bb8947f25b41f7e75b12ee2eadec3
-workflow-type: ht
-source-wordcount: '753'
+workflow-type: tm+mt
+source-wordcount: '739'
 ht-degree: 100%
 
 ---
@@ -33,11 +33,11 @@ Die AEM-Dokumentation umfasst Standard-Anwendungsfälle. Aus diesem Grund werden
 
 Ausnahmen gelten für die Versionshinweise, in denen bekannte Probleme mit möglichen Lösungen aufgelistet werden können, die vom AEM Product Management genehmigt wurden.
 
-### Dokumentationsbeiträge sind nicht zur Beantwortung technischer Fragen geeignet.
+### Dokumentationsbeiträge sind nicht zur Beantwortung technischer Fragen gedacht.
 
 Alle Ideen, die Sie möglicherweise zur Verbesserung der AEM-Dokumentation haben, sind als Beiträge willkommen. Kommentare, Probleme und Pull-Anfragen sind jedoch nur für *Beiträge* vorgesehen. Sie sind nicht zur Beantwortung Ihrer Fragen über die Verwendung von AEM, Implementierung Ihres AEM-Projekts oder zur Lösung technischer Probleme gedacht.
 
-Fragen zur Verwendung von AEM oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Vorgang über das [Support-Portal für Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
+Fragen zur Verwendung von AEM oder zu technischen Fehlern, die möglicherweise bei Ihnen auftreten, sollten entsprechend dem herkömmlichen Support-Prozess über das [Support-Portal für Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#home) gemeldet oder in der [Experience Manager-Community](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) diskutiert werden.
 
 ***AEM-Dokumentationsbeiträge sind kein Ersatz für den Adobe-Support*** und Beiträge, die Antworten auf Support-Fragen suchen, werden abgelehnt.
 

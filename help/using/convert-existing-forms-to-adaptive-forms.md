@@ -1,22 +1,19 @@
 ---
 title: Konvertieren von PDF-Formularen in adaptive Formulare
-seo-title: Convert PDF forms to adaptive forms
 description: Ausführen des Dienstes für die automatisierte Formularkonvertierung (AFCS), um PDF-Formulare in adaptive Formulare zu konvertieren
-seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
-contentOwner: khsingh
-topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+role: Admin, Developer
+level: Beginner, Intermediate
+source-git-commit: 02e808d6d777078d148f073835e24fd20712eade
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 100%
+source-wordcount: '1894'
+ht-degree: 91%
 
 ---
 
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatisierte Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte AEM Forms Automated Forms Conversion Service (AFCS) konvertiert Ihre PDF forms automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatisierte Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -51,7 +48,6 @@ Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Insta
 Führen Sie die folgenden Schritte aus, um die zu konvertierenden Formulare in einen in Ihrer AEM Forms-Instanz hochzuladen:
 
 1. Melden Sie sich bei der AEM Forms-Instanz an.
-
 1. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Ordner]** Geben Sie **Titel** und **Name** des Ordners an. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein Ordner wird erstellt.
 1. Tippen Sie darauf, um den neu erstellten Ordner zu öffnen.
@@ -65,6 +61,21 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
 1. Wählen Sie ein Formular oder den Ordner mit PDF-Formularen (den zu konvertierenden Formulare) aus und tippen Sie auf **[!UICONTROL Automatische Konvertierung starten]**. Das Dialogfeld **[!UICONTROL Konvertierungseinstellungen]** wird angezeigt.
 
    ![Geben Sie die Konfiguration an](assets/conversion-settings-dialog.png)
+
+   **Konvertieren von PDFs in Kernkomponenten für adaptive Formulare**
+
+   <span class="preview">Diese Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
+
+   Die obige Konvertierungseinstellung ist erforderlich, um PDF forms in Foundation-basierte Formulare zu konvertieren. So konvertieren Sie ein PDF-Formular in ein auf Kernkomponenten basierendes adaptives Formular:
+
+   1. Stellen Sie sicher[ dass Sie „Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction) auf Ihrer AEM Forms-Instanz aktiviert haben. Wenn er nicht aktiviert ist, können Sie [Kernkomponenten in Ihrer AEM 6.5- oder {](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)}Cloud Service-Umgebung aktivieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).[
+   1. Wählen Sie eine [Kernkomponenten-basierte Vorlage und ein Design für ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) adaptive Formular aus, wie in der Abbildung unten dargestellt:
+      ![Adaptive Formularvorlage auswählen](assets/select-af-template-1.png).
+   1. Tippen Sie auf **[!UICONTROL Konversion starten]**, um die PDF in ein auf Kernkomponenten basierendes Formular zu konvertieren.
+   >[!NOTE]
+   > * Eigenschaften wie Datenbindung oder Datenmodellschema sind nicht für auf Kernkomponenten basierende adaptive Formulare verfügbar, dasselbe gilt jedoch für Foundation-Komponenten.
+   > * [Überprüfen und Korrigieren der konvertierten Formulare](#review-and-correct-the-converted-forms) ist nicht für auf Kernkomponenten basierende Formulare verfügbar.
+
 
 1. Auf der Registerkarte **[!UICONTROL Standard]** des Dialogfelds „Konvertierungseinstellungen“:
 

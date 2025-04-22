@@ -5,15 +5,15 @@ feature: Adaptive Forms, Foundation Components
 role: Admin, Developer
 level: Beginner, Intermediate
 source-git-commit: 02e808d6d777078d148f073835e24fd20712eade
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1894'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der von Adobe Sensei unterstützte AEM Forms Automated Forms Conversion Service (AFCS) konvertiert Ihre PDF forms automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatisierte Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatisierte Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -62,19 +62,19 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
 
    ![Geben Sie die Konfiguration an](assets/conversion-settings-dialog.png)
 
-   **Konvertieren von PDFs in Kernkomponenten für adaptive Formulare**
+   **Konvertieren von PDF-Dateien in Kernkomponenten adaptiver Formulare**
 
    <span class="preview">Diese Funktion ist im Rahmen des Early-Adopter-Programms verfügbar. Sie können von Ihrer offiziellen E-Mail-Adresse aus an aem-forms-ea@adobe.com schreiben, um dem Early-Adopter-Programm beizutreten und den Zugriff auf diese Funktion zu beantragen. </span>
 
-   Die obige Konvertierungseinstellung ist erforderlich, um PDF forms in Foundation-basierte Formulare zu konvertieren. So konvertieren Sie ein PDF-Formular in ein auf Kernkomponenten basierendes adaptives Formular:
+   Die oben aufgeführte Konvertierungseinstellung ist erforderlich, um PDF-Formulare in Foundation-basierte Formulare zu konvertieren. So konvertieren Sie ein PDF-Formular in ein auf Kernkomponenten basierendes adaptives Formular:
 
-   1. Stellen Sie sicher[ dass Sie „Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction) auf Ihrer AEM Forms-Instanz aktiviert haben. Wenn er nicht aktiviert ist, können Sie [Kernkomponenten in Ihrer AEM 6.5- oder {](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)}Cloud Service-Umgebung aktivieren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).[
-   1. Wählen Sie eine [Kernkomponenten-basierte Vorlage und ein Design für ](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) adaptive Formular aus, wie in der Abbildung unten dargestellt:
-      ![Adaptive Formularvorlage auswählen](assets/select-af-template-1.png).
-   1. Tippen Sie auf **[!UICONTROL Konversion starten]**, um die PDF in ein auf Kernkomponenten basierendes Formular zu konvertieren.
+   1. Stellen Sie sicher, dass Sie auf Ihrer AEM Forms-Instanz [Kernkomponenten](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction) aktiviert haben. Falls die Option nicht aktiviert ist, können Sie [Kernkomponenten in AEM 6.5](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) oder in der [Cloud-Service-Umgebung](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components) aktivieren.
+   1. Wählen Sie wie im Bild unten gezeigt eine [auf Kernkomponenten basierende adaptive Formularvorlage und ein entsprechendes Design](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components) aus:
+      ![Wählen Sie eine adaptive Formularvorlage aus](assets/select-af-template-1.png).
+   1. Tippen Sie auf **[!UICONTROL Konvertierung starten]**, um die PDF-Datei in ein auf Kernkomponenten basierendes Formular zu konvertieren.
    >[!NOTE]
-   > * Eigenschaften wie Datenbindung oder Datenmodellschema sind nicht für auf Kernkomponenten basierende adaptive Formulare verfügbar, dasselbe gilt jedoch für Foundation-Komponenten.
-   > * [Überprüfen und Korrigieren der konvertierten Formulare](#review-and-correct-the-converted-forms) ist nicht für auf Kernkomponenten basierende Formulare verfügbar.
+   > * Eigenschaften wie Datenbindung oder Datenmodellschema sind für auf Kernkomponenten basierende adaptive Formulare nicht verfügbar, sind jedoch für Foundation-Komponenten verfügbar.
+   > * Das [Überprüfen und Korrigieren der konvertierten Formulare](#review-and-correct-the-converted-forms) ist für auf Kernkomponenten basierende Formulare nicht verfügbar.
 
 
 1. Auf der Registerkarte **[!UICONTROL Standard]** des Dialogfelds „Konvertierungseinstellungen“:

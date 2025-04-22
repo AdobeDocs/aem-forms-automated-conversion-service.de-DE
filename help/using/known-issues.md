@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
 source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '827'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,5 +81,5 @@ ht-degree: 96%
 * Informationen, die mit Farben im PDF-Quellformular kodiert wurden, werden nicht in das adaptive Formular übernommen.
 * Die Farben des PDF-Quellformulars werden nicht in Themen für adaptive Formulare übertragen.
 * Farbige PDF-Formulare werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
-* Eigenschaften wie Datenbindung oder Datenmodellschema sind für adaptive Formulare, die auf Kernkomponenten basieren, nicht verfügbar.
-* Überprüfen und korrigieren Sie, dass die konvertierten Formulare für auf Kernkomponenten basierende Formulare nicht verfügbar sind.
+* Eigenschaften wie Datenbindung oder Datenmodellschema sind für auf Kernkomponenten basierende adaptive Formulare nicht verfügbar.
+* Das Überprüfen und Korrigieren der konvertierten Formulare ist für auf Kernkomponenten basierende Formulare nicht verfügbar.

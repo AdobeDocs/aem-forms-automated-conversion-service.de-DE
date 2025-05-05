@@ -29,7 +29,7 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 ## Voraussetzungen {#pre-requisites}
 
 * Eine AEM 6.4 oder 6.5 Author-Instanz einrichten
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren des [Dienstes für die automatisierte Formularkonvertierung (AFCS)](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.

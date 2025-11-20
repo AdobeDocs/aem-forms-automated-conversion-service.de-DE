@@ -27,7 +27,7 @@ ht-degree: 100%
 + [Konvertieren von Druckformularen in adaptive Formulare](convert-existing-forms-to-adaptive-forms.md)
 + [Überprüfen und Korrigieren konvertierter Formulare](review-correct-ui-edited.md)
 + [Erweitern des Standardmetamodells](extending-the-default-meta-model.md)
-+ [Empfohlene datenquellenbasierte Vorfüll- und Übermittlungsarbeitsabläufe für adaptive Formulare](prefill-submit-forms.md)
++ [Empfohlene datenquellenbasierte Vorfüll- und Übermittlungs-Workflows für adaptive Formulare](prefill-submit-forms.md)
 + [Empfohlene Workflows zum Generieren des Datensatzdokuments für adaptive Formulare](enable-document-of-record-generation.md)
 + [Integrieren des adaptiven Formulars mithilfe des AEM-Workflows in die Datenbank](submit-converted-adaptive-form-to-database.md)
 + [Häufig gestellte Fragen](frequently-asked-questions.md)

@@ -4,10 +4,10 @@ description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1223'
+ht-degree: 99%
 
 ---
 
@@ -28,8 +28,8 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 
 ## Voraussetzungen {#pre-requisites}
 
-* Eine AEM 6.4 oder 6.5 Author-Instanz einrichten
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Einrichten einer AEM 6.5- oder AEM 6.5 LTS-Autoreninstanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren des [Dienstes für die automatisierte Formularkonvertierung (AFCS)](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
@@ -148,7 +148,7 @@ Führen Sie die folgenden Schritte aus, um ein Schema und Tabellen in der Datenb
 
 Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwischen der AEM-Instanz und der MYSQL-Datenbank herzustellen:
 
-1. Gehen Sie unter *http://[host]:[port]/system/console/configMgr* zur AEM Web Console-Konfigurationsseite.
+1. Gehen Sie unter *http://[host]:[port]/system/console/configMgr* zur Konfigurationsseite der AEM-Web-Konsole.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
@@ -192,7 +192,7 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tbody> 
     </table>
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
-1. Klicken und öffnen Sie **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web Console-Konfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
+1. Klicken und öffnen Sie **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web-Konsolenkonfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
    <table> 
     <tbody> 
@@ -257,7 +257,7 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     <td><p>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Maximale Wartezeit der Validierungsabfrage</p></td> 
+    <td><p>Timeout der Validierungsabfrage</p></td> 
     <td><p>10000</p></td>
     </tr>
     </tbody> 
@@ -271,7 +271,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 [Datei abrufen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Gehen Sie zu AEM Package Manager unter *http://[host]:[port]/crx/packmgr/*.
+1. Gehen Sie zum AEM-Paket-Manager unter *http://[host]:[port]/crx/packmgr/*.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
@@ -293,7 +293,7 @@ Führen Sie die folgenden Schritte aus, um eine Forms Portal-Seite zu erstellen 
 1. Wählen Sie den Speicherort aus, an dem Sie die neue Forms Portal-Seite speichern möchten, und tippen Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Seite]**.
 1. Wählen Sie die Vorlage für die Seite aus, tippen Sie auf **[!UICONTROL Weiter]**, geben Sie einen Titel für die Seite an und tippen Sie auf **[!UICONTROL Erstellen]**.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um die Seite zu konfigurieren.
-1. Tippen Sie im Seitenkopf auf ![Vorlage bearbeiten](assets/edit_template_sites.png)   > **[!UICONTROL Vorlage bearbeiten]**, um die Vorlage der Seite zu öffnen.
+1. Tippen Sie im Seiten-Header auf ![Vorlage bearbeiten](assets/edit_template_sites.png)   > **[!UICONTROL Vorlage bearbeiten]**, um die Vorlage der Seite zu öffnen.
 1. Tippen Sie auf Layout-Container und anschließend auf ![Vorlagenrichtlinie bearbeiten](assets/edit_template_policy.png). Aktivieren Sie auf der Registerkarte **[!UICONTROL Zulässige Komponenten]** die Optionen **[!UICONTROL Document Services]** und **[!UICONTROL Document Services Predicates]** und tippen Sie auf ![Vorlagenrichtlinie speichern](assets/edit_template_done.png).
 1. Fügen Sie die Komponente **[!UICONTROL Search &amp; Lister]** in die Seite ein. Daraufhin werden alle in Ihrer AEM-Instanz verfügbaren adaptiven Formulare auf der Seite aufgelistet.
 1. Fügen Sie die Komponente **[!UICONTROL Entwürfe &amp; Sendungen]** in die Seite ein. Zwei Registerkarten **[!UICONTROL Entwurfsformulare]** und **[!UICONTROL Gesendete Formulare]** werden auf der Forms Portal-Seite angezeigt. Auf der Registerkarte **[!UICONTROL Entwurfsformulare]** wird auch das konvertierte adaptive Formular angezeigt, das mit den unter [Konfigurieren des konvertierten adaptiven Formulars für die Integration von Forms Portal](#configure-converted-adaptive-form-for-forms-portal-integration) genannten Schritten generiert wurde.

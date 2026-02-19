@@ -8,28 +8,28 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1820'
+ht-degree: 96%
 
 ---
 
 # Häufig gestellte Fragen{#frequently-asked-questions}
 
 1. **Welche Version von AEM Forms wird vom Dienst für die automatisierte Formularkonvertierung (AFCS) unterstützt?**
-   <p>Der Dienst für die automatisierte Formularkonvertierung (AFCS) unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM Forms unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
+   <p>Der Service für die automatische Formularkonvertierung (AFCS) unterstützt AEM 6.5 Forms, AEM 6.5 LTS Forms und AEM Forms as a Cloud Service. Es funktioniert sowohl mit AEM Forms unter OSGi als auch mit AEM-Formularen unter JEE. Für AEM 6.5 und AEM 6.5 LTS benötigen Sie das neueste AEM Forms-Add-on-Paket zusätzlich zur AEM-Autoreninstanz und müssen <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de">Kernkomponenten für adaptive Formulare aktivieren</a> , wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
     <br>
 
 1. **Kann der Dienst vor Ort installiert werden?**
    <p>Adobe schult regelmäßig KI- und ML-Algorithmen des Dienstes für die automatisierte Formularkonvertierung (AFCS) mit neuen Daten, um die Konvertierungsgenauigkeit zu verbessern. Die aktualisierten Algorithmen werden in regelmäßigen Abständen für den in Adobe Cloud ausgeführten Konvertierungsdienst bereitgestellt. Alle Kunden des Dienstes profitieren von den aktualisierten Algorithmen. Die in der Cloud gehostete zentrale Bereitstellung eignet sich daher am besten für den Dienst für die automatisierte Formularkonvertierung (AFCS), da so kontinuierliches Lernen und Verbesserungen für alle Kundinnen und Kunden sichergestellt werden.</p> 
-    <p>Der Dienst konvertiert leere Formulare in adaptive Formulare. Der Dienst unterstützt keine ausgefüllten Formulare und das Extrahieren von Daten aus ausgefüllten Formularen. Entfernen Sie Daten aus ausgefüllten Formularen und entfernen oder schützen Sie proprietäre Informationen aus den Formularen, bevor Sie die Formulare zur Konvertierung an den Dienst senden</p> <br>
+    <p>Der Dienst konvertiert leere Formulare in adaptive Formulare. Der Dienst unterstützt keine ausgefüllten Formulare und die Extraktion von Daten aus ausgefüllten Formularen. Entfernen Sie Daten aus ausgefüllten Formularen und entfernen oder schützen Sie proprietäre Informationen aus den Formularen, bevor Sie die Formulare zur Konvertierung an den Dienst senden</p> <br>
 
 1. **Unterstützt der Dienst alle Formate von PDF-Formularen? Werden alle Sprachen unterstützt?**
    <p>Der Dienst kann nicht-interaktive PDF-Formulare, XFA-basierte XDP- und PDF-Formulare sowie AcroForms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.<br /> </p> 
     <p>Wir fügen regelmäßig Unterstützung für andere Quelltypen hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p>
 
-   Der Service kann ausschließlich Formulare auf Deutsch, Englisch, Französisch Italienisch, Portugiesisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
+   Der Service kann ausschließlich Formulare auf Deutsch, Englisch, Französisch Italienisch, Portugiesisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Workflows](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
 
 1. **Kann der Dienst ein XDP anstelle eines adaptiven Formulars erstellen?**
    <p>Der Dienst erzeugt keine XDP-Ausgabe. Wir fügen regelmäßig Funktionen zum Dienst hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p> <br>

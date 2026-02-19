@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 100%
+source-wordcount: '1291'
+ht-degree: 95%
 
 ---
 
@@ -46,10 +46,12 @@ Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folg
 
 ### Vor dem Beginn der Konvertierung
 
+* **AEM Forms as a Cloud Service:** Standardvorlagen und Designs sind verfügbar. Sie können sie verwenden oder benutzerdefinierte Vorlagen und Designs erstellen.
+* **AEM 6.5 und AEM 6.5 LTS:** Erstellen Sie Vorlagen und Designs für adaptive Formulare (oder installieren Sie Referenz-Assets wie in [Konfigurieren des Service](configure-service.md#referencepackage) beschrieben). Sie müssen [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) aktivieren, wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten.
 * Adaptive Formularvorlagen erstellen. Mithilfe von Vorlagen können Sie eine einheitliche Struktur für Formulare Ihrer Organisation oder Abteilung festlegen.
 * Geben Sie die Kopf- und Fußzeile in den adaptiven Formularvorlagen an. Der Dienst ignoriert die Kopf- und Fußzeile von PDF-Quelldokumenten und verwendet die in der adaptiven Formularvorlage angegebene Kopfzeile.
 * Themen für adaptive Formulare erstellen. Mithilfe von Themen können Formen Ihrer Organisation oder Abteilung einheitlich gestaltet werden.
-* Konfigurieren Sie das Formulardatenmodell zum Speichern und Abrufen aus einer Datenquelle. Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte.
+* Konfigurieren Sie das Formulardatenmodell zum Speichern und Abrufen aus einer Datenquelle. Konfigurieren der Lese- und Schreibdienste für Formulardatenmodell-Objekte.
 * Erstellen Sie adaptive Formularfragmente und konfigurieren Sie den Dienst für die Verwendung Ihrer adaptiven Formularfragmente.
 * Bereiten Sie allgemeine Workflow-Modelle für die Formulare vor, die eine Automatisierung von Geschäftsprozessen erfordern.
 * Konfigurieren Sie bei Bedarf Adobe Analytics

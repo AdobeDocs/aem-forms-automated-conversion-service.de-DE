@@ -1,6 +1,6 @@
 ---
 title: Senden der konvertierten adaptiven Formulare mit einem JSON-Schema an die Datenbank
-description: Senden Sie die konvertierten adaptiven Formulare mit einem JSON-Schema an die Datenbank, indem Sie ein Formulardatenmodell erstellen und in einem AEM-Arbeitsablauf darauf verweisen.
+description: Senden Sie die konvertierten adaptiven Formulare mit einem JSON-Schema an die Datenbank, indem Sie ein Formulardatenmodell erstellen und in einem AEM-Workflow darauf verweisen.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1674'
+ht-degree: 99%
 
 ---
 
@@ -29,15 +29,15 @@ Dieser Artikel gibt Anweisungen zu den einzelnen Schritten für die erfolgreiche
 
 ## Voraussetzungen {#pre-requisites}
 
-* Eine AEM 6.4 oder 6.5 Author-Instanz einrichten
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Einrichten einer AEM 6.5- oder AEM 6.5 LTS-Autoreninstanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren Sie den [Dienst für die automatische Formularkonvertierung](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
 
 ## Beispiel für ein adaptives Formular {#sample-adaptive-form}
 
-Laden Sie die folgende PDF-Beispieldatei herunter, um den Anwendungsfall zum Integrieren konvertierter adaptiver Formulare in die Datenbank mithilfe eines AEM-Arbeitsablaufs auszuführen.
+Laden Sie die folgende PDF-Beispieldatei herunter, um den Anwendungsfall zum Integrieren konvertierter adaptiver Formulare in die Datenbank mithilfe eines AEM-Workflows auszuführen.
 
 Sie können das Beispiel-Kontaktformular herunterladen mit:
 
@@ -82,8 +82,8 @@ CREATE TABLE `contactus` (
 
 Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwischen der AEM-Instanz und der MYSQL-Datenbank herzustellen:
 
-1. Navigieren Sie zur AEM Web Console-Konfigurationsseite unter `http://server:port/system/console/configMgr`.
-1. Klicken und öffnen Sie **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web Console-Konfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
+1. Navigieren Sie zur Konfigurationsseite der AEM-Web-Konsole unter `http://server:port/system/console/configMgr`.
+1. Klicken und öffnen Sie **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web-Konsolenkonfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
    <table> 
     <tbody> 
@@ -148,7 +148,7 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     <td><p>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Maximale Wartezeit der Validierungsabfrage</p></td> 
+    <td><p>Timeout der Validierungsabfrage</p></td> 
     <td><p>10000</p></td>
     </tr>
     </tbody> 
@@ -172,7 +172,7 @@ Führen Sie nach dem Konfigurieren von MYSQL als Datenquelle die folgenden Schri
 
 1. Wählen Sie das Datenmodellobjekt im rechten Bereich aus und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Wählen Sie die Dienste **[!UICONTROL get]** und **[!UICONTROL insert]** aus den Dropdown-Listen **[!UICONTROL Read-Dienst]** und **[!UICONTROL Write-Dienst]** aus. Geben Sie die Argumente für den Read-Dienst an und tippen Sie auf **[!UICONTROL Fertig]**.
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Dienste]** den Dienst **[!UICONTROL get]** und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Wählen Sie das **[!UICONTROL Ausgabemodellobjekt]**, deaktivieren Sie den Schalter **[!UICONTROL Rückgabe-Array]** und tippen Sie auf **[!UICONTROL Fertig]**.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Dienste]** den Dienst **[!UICONTROL get]** und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Wählen Sie das **[!UICONTROL Ausgabemodellobjekt]**, deaktivieren Sie den Umschalter **[!UICONTROL Rückgabe-Array]** und tippen Sie auf **[!UICONTROL Fertig]**.
 
 1. Wählen Sie den Dienst **[!UICONTROL insert]** und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Wählen Sie das **[!UICONTROL Eingabemodellobjekt]** und tippen Sie auf **[!UICONTROL Fertig]**.
 
@@ -217,25 +217,25 @@ Melden Sie sich bei **crx-repository** an und navigieren Sie zu */content/forms/
 }
 ```
 
-Sie müssen jetzt ein Arbeitsablaufmodell erstellen, das diese Daten verarbeiten und über das in den vorherigen Abschnitten erstellte Formulardatenmodell an die MYSQL-Datenbank senden kann.
+Sie müssen jetzt ein Workflow-Modell erstellen, das diese Daten verarbeiten und über das in den vorherigen Abschnitten erstellte Formulardatenmodell an die MYSQL-Datenbank senden kann.
 
 ## Erstellen Sie ein Workflow-Modell zur Verarbeitung von JSON-Daten {#create-workflow-model}
 
-Führen Sie die folgenden Schritte aus, um ein Arbeitsablaufmodell zum Senden der adaptiven Formulardaten an die Datenbank zu erstellen:
+Führen Sie die folgenden Schritte aus, um ein Workflow-Modell zum Senden der adaptiven Formulardaten an die Datenbank zu erstellen:
 
-1. Öffnen Sie die Konsole für Arbeitsablaufmodelle. Die Standardeinstellung ist `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`.
+1. Öffnen Sie die Konsole für Workflow-Modelle. Die Standardeinstellung ist `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`.
 
-1. Wählen Sie dann **[!UICONTROL Erstellen]** und dann **[!UICONTROL Modell erstellen]** aus. Das Dialogfeld **[!UICONTROL Arbeitsablaufmodell hinzufügen]** wird angezeigt.
+1. Wählen Sie dann **[!UICONTROL Erstellen]** und dann **[!UICONTROL Modell erstellen]** aus. Das Dialogfeld **[!UICONTROL Workflow-Modell hinzufügen]** wird angezeigt.
 
 1. Geben Sie den **[!UICONTROL Titel]** und den **[!UICONTROL Namen]** ein (optional). Zum Beispiel **workflow_json_submit**. Tippen Sie auf **[!UICONTROL Fertig]**, um das Modell zu erstellen.
 
-1. Wählen Sie das Arbeitsablaufmodell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**, um das Modell im Bearbeitungsmodus zu öffnen. Tippen Sie auf + und fügen Sie dem Arbeitsablaufmodell den Schritt **[!UICONTROL Formulardatenmodelldienst aufrufen]** hinzu.
+1. Wählen Sie das Workflow-Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**, um das Modell im Bearbeitungsmodus zu öffnen. Tippen Sie auf + und fügen Sie dem Workflow-Modell den Schritt **[!UICONTROL Formulardatenmodelldienst aufrufen]** hinzu.
 
 1. **[!UICONTROL Tippen Sie auf den Schritt Formulardatenmodelldienst aufrufen]** and und anschließend auf ![Konfigurieren](assets/configure_icon.png).
 
 1. Wählen Sie auf der Registerkarte ]**Formulardatenmodell**[!UICONTROL  das Formulardatenmodell, das Sie im Feld **[!UICONTROL Formulardatenmodellpfad]** angelegt haben, und wählen Sie **[!UICONTROL insert]** aus der Dropdown-Liste **[!UICONTROL Dienst]**.
 
-1. Wählen Sie auf der Registerkarte **[!UICONTROL Eingabe für Dienst]** die Option **[!UICONTROL Eingabedaten mithilfe von Literal- , Variablen- oder Arbeitsablauf-Metadaten und einer JSON-Datei bereitstellen]** aus der Dropdown-Liste, aktivieren Sie das Kontrollkästchen **[!UICONTROL Eingabefelder aus Eingabe-JSON zuordnen]** und aktivieren Sie **[!UICONTROL Relativ zur Nutzlast]** und geben Sie **data.xml** als Wert für das Feld **[!UICONTROL JSON-Eingabedokument auswählen mit]** an.
+1. Wählen Sie auf der Registerkarte **[!UICONTROL Eingabe für Dienst]** die Option **[!UICONTROL Eingabedaten mithilfe von Literal- , Variablen- oder Workflow-Metadaten und einer JSON-Datei bereitstellen]** aus der Dropdown-Liste, aktivieren Sie das Kontrollkästchen **[!UICONTROL Eingabefelder aus Eingabe-JSON zuordnen]** und aktivieren Sie **[!UICONTROL Relativ zur Nutzlast]** und geben Sie **data.xml** als Wert für das Feld **[!UICONTROL JSON-Eingabedokument auswählen mit]** an.
 
 1. Geben Sie im Abschnitt **[!UICONTROL Dienstargumente]** die folgenden Werte für die Formulardatenmodellargumente ein:
 
@@ -245,13 +245,13 @@ Führen Sie die folgenden Schritte aus, um ein Arbeitsablaufmodell zum Senden de
 
 ## Konfigurieren der Übermittlung des adaptiven Formulars {#configure-adaptive-form-submission}
 
-Führen Sie die folgenden Schritte aus, um das adaptive Formular an das Arbeitsablaufmodell zu senden, das Sie im vorherigen Abschnitt erstellt haben:
+Führen Sie die folgenden Schritte aus, um das adaptive Formular an das Workflow-Modell zu senden, das Sie im vorherigen Abschnitt erstellt haben:
 
 1. Wählen Sie das konvertierte Kontaktformular aus, das im Ordner **[!UICONTROL Ausgabe]** unter **[!UICONTROL Formulare und Dokumente]** verfügbar ist, und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 
 1. Öffnen Sie die Eigenschaften des adaptiven Formulars, indem Sie auf **[!UICONTROL Formularcontainer]** und anschließend auf ![Konfigurieren](assets/configure_icon.png) tippen.
 
-1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL AEM-Arbeitsablauf aufrufen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**, wählen Sie das Arbeitsablaufmodell, das Sie im vorherigen Abschnitt erstellt haben, und geben Sie **data.xml** im Feld **[!UICONTROL Datendateipfad]** an.
+1. Wählen Sie im Abschnitt **[!UICONTROL Übermittlung]** die Option **[!UICONTROL AEM-Workflow aufrufen]** aus der Dropdown-Liste **[!UICONTROL Übermittlungsaktion]**, wählen Sie das Workflow-Modell, das Sie im vorherigen Abschnitt erstellt haben, und geben Sie **data.xml** im Feld **[!UICONTROL Datendateipfad]** an.
 
 1. Tippen Sie auf ![Speichern](assets/save_icon.png), um die Eigenschaften zu speichern.
 

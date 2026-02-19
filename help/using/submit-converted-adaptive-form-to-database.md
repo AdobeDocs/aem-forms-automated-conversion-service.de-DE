@@ -233,7 +233,7 @@ Führen Sie die folgenden Schritte aus, um ein Workflow-Modell zum Senden der ad
 
 1. **[!UICONTROL Tippen Sie auf den Schritt Formulardatenmodelldienst aufrufen]** and und anschließend auf ![Konfigurieren](assets/configure_icon.png).
 
-1. Wählen Sie auf der Registerkarte ]**Formulardatenmodell**[!UICONTROL  das Formulardatenmodell, das Sie im Feld **[!UICONTROL Formulardatenmodellpfad]** angelegt haben, und wählen Sie **[!UICONTROL insert]** aus der Dropdown-Liste **[!UICONTROL Dienst]**.
+1. Wählen Sie auf der Registerkarte **Formulardatenmodell** das Formulardatenmodell, das Sie im Feld **[!UICONTROL Formulardatenmodellpfad]** angelegt haben, und wählen Sie **[!UICONTROL insert]** aus der Dropdown-Liste **[!UICONTROL Dienst]**.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Eingabe für Dienst]** die Option **[!UICONTROL Eingabedaten mithilfe von Literal- , Variablen- oder Workflow-Metadaten und einer JSON-Datei bereitstellen]** aus der Dropdown-Liste, aktivieren Sie das Kontrollkästchen **[!UICONTROL Eingabefelder aus Eingabe-JSON zuordnen]** und aktivieren Sie **[!UICONTROL Relativ zur Nutzlast]** und geben Sie **data.xml** als Wert für das Feld **[!UICONTROL JSON-Eingabedokument auswählen mit]** an.
 

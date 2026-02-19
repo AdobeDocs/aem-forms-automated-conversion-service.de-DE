@@ -82,7 +82,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
+| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Formularfelder {#form-fields}
 

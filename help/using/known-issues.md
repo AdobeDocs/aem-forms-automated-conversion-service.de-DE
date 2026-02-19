@@ -37,7 +37,7 @@ ht-degree: 95%
    * XFA-Skripte werden nicht unterstützt. Zum Beispiel Skripte zum automatischen Generieren von Werten für eine Dropdown-Komponente.
    * Das Metamodell funktioniert nicht für die Auswahlgruppe
    * Option „Auswahlgruppen“ mit einem einzelnen Zeichen werden nicht identifiziert
-   * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, ](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
+   * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, &#x200B;](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
 
 * Beachten Sie Folgendes, wenn Sie die Option **Eingabe AcroForm als Datensatzdokument (DoR) für generierte adaptive Formulare** verwenden:
 

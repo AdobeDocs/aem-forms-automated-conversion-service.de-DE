@@ -250,7 +250,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
 
    Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich abgerufen* angezeigt.
 
-   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. ](/help/using/assets/healthy-dialog.png)
+   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. &#x200B;](/help/using/assets/healthy-dialog.png)
 
 1. Klicken Sie auf **Schließen**.
 

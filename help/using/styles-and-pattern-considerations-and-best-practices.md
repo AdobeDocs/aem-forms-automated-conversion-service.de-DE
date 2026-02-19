@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1291'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
 # Best Practices und bekannte komplexe Muster {#Best-practices-and-considerations2}
 
-Dieses Dokument enthält Richtlinien und Empfehlungen, von denen Formular-Admins, Autorinnen und Autoren sowie Entwickelnde profitieren können, wenn sie mit [!DNL Automated Forms Conversion service] (AFCS) arbeiten. Es werden Best Practices erläutert, die von der Vorbereitung der Quellformulare bis zur Anpassung komplexer Muster reichen, welche für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese Best Practices tragen zusammen zur Gesamtleistung und Ausgabe des [!DNL Automated Forms Conversion service] (AFCS) bei.
+Dieses Dokument enthält Richtlinien und Empfehlungen, von denen Formularadministratoren, Autoren und Entwickler bei der Arbeit mit [!DNL Automated Forms Conversion service] (AFCS) profitieren können. Es werden Best Practices erläutert, die von der Vorbereitung der Quellformulare bis zur Anpassung komplexer Muster reichen, welche für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese Best Practices tragen zusammen zur Gesamtleistung und Ausgabe des [!DNL Automated Forms Conversion service] (AFCS) bei.
 
 ## Best Practices
 
@@ -82,7 +82,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder &#x200B;](assets/best-practice-choice-group-options.png) |
+| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
 
 ### Formularfelder {#form-fields}
 
@@ -121,3 +121,4 @@ Comment Type: draft
 <li>Choice groups with only box or circle shaped selectors are supported. </li>
 </ul>
 -->
+

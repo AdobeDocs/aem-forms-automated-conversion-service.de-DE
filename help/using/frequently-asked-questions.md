@@ -8,7 +8,7 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 96%
@@ -101,7 +101,7 @@ Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie k
    <p>Die Zeitdauer hängt von der Größe und Komplexität der Eingabeformulare und der Anzahl der Anforderungen ab. Der Dienst beabsichtigt, die Wertschöpfungszeit erheblich zu verkürzen, indem PDF-Formulare im Vergleich zum manuellen Konvertieren von Formularen viel schneller in adaptive Formulare konvertiert werden. </p> <br />
 
 1. **Was tun, wenn ein Fehler in Verbindung mit RSA-Bibliotheken auftritt ? Die Fehlermeldung ähnelt der unten genannten Meldung:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
    <p> </p>
 
@@ -121,3 +121,4 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
    </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>
 
    Fügen Sie [Adobe Sign-Text-Tags](https://helpx.adobe.com/de/sign/using/text-tag.html) zu den Feldnamen hinzu oder verwenden Sie die Option [Convert to Adobe Sign Form (In Adobe Sign-Formular konvertieren)](https://helpx.adobe.com/de/sign/using/create-forms-with-acrobat.html).
+

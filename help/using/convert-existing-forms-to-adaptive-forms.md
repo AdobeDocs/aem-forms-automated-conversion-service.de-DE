@@ -7,16 +7,16 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 6ec2a2afbbf0e70c1101e365094881c7a8959a0a
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
 source-wordcount: '1906'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungs-Workflow und zu Onboarding-Informationen finden Sie unter Dienst für die [automatische Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Weitere Informationen zu den Funktionen, zum Konvertierungs-Workflow und zum Onboarding finden Sie unter [Service für die automatische Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -173,3 +173,4 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
 ## Überprüfen und korrigieren Sie die konvertierten Formulare {#review-and-correct-the-converted-forms}
 
 Formulare für die reale Welt stellen komplexe Anforderungen an die Datenerfassung dar. Sobald die automatische Konvertierung abgeschlossen ist, können Kunden die Konvertierungsqualität des Formulars überprüfen und die erforderlichen Aktualisierungen am Formular vornehmen. AEM Forms bietet einen Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md), um die erforderlichen Änderungen vorzunehmen. Sie können die automatische Identifizierung von Formularfeldern verbessern und identifizierte Felder von einem Typ in einen anderen konvertieren. Sie können beispielsweise dazu beitragen, das zweispaltige Layout eines Formulars zu identifizieren und ein Feld, das automatisch als Optionsfeld identifiziert wird, in ein Mehrfachauswahlfeld zu ändern.
+

@@ -4,17 +4,17 @@ description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 99%
+source-wordcount: '1221'
+ht-degree: 95%
 
 ---
 
 
 # Integrieren adaptiver Formulare in die Datenbank mithilfe des Formularportals {#submit-forms-to-database-using-forms-portal}
 
-Mit dem Dienst für die automatisierte Formularkonvertierung (AFCS) können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
+Mit dem Service für die automatische Formularkonvertierung (AFCS) können Sie ein nicht interaktives PDF-Formular, ein AcroForm-Formular oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Beim Initiieren des Konvertierungsprozesses haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindungen zu generieren.
 
 Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, ordnet der Konvertierungsdienst die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden.
 
@@ -29,7 +29,7 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 ## Voraussetzungen {#pre-requisites}
 
 * Einrichten einer AEM 6.5- oder AEM 6.5 LTS-Autoreninstanz
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren des [Dienstes für die automatisierte Formularkonvertierung (AFCS)](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
@@ -299,3 +299,4 @@ Führen Sie die folgenden Schritte aus, um eine Forms Portal-Seite zu erstellen 
 1. Fügen Sie die Komponente **[!UICONTROL Entwürfe &amp; Sendungen]** in die Seite ein. Zwei Registerkarten **[!UICONTROL Entwurfsformulare]** und **[!UICONTROL Gesendete Formulare]** werden auf der Forms Portal-Seite angezeigt. Auf der Registerkarte **[!UICONTROL Entwurfsformulare]** wird auch das konvertierte adaptive Formular angezeigt, das mit den unter [Konfigurieren des konvertierten adaptiven Formulars für die Integration von Forms Portal](#configure-converted-adaptive-form-for-forms-portal-integration) genannten Schritten generiert wurde.
 
 1. Tippen Sie auf **[!UICONTROL Vorschau]**, tippen Sie auf das konvertierte adaptive Formular, geben Sie Werte für adaptive Formularfelder an und senden Sie es. Die Werte, die Sie für adaptive Formularfelder angeben, werden an die integrierte Datenbank gesendet.
+

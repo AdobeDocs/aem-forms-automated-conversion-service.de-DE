@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: fbfbb35889b788ce82f5e25a957d86d3b6d7edf7
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '2603'
-ht-degree: 84%
+source-wordcount: '2599'
+ht-degree: 83%
 
 ---
 
 # Konfigurieren des Dienstes für die automatisierte Formularkonvertierung (AFCS) {#about-this-help}
 
-Dieser Artikel beschreibt, wie AEM-Admins den Dienst für die automatisierte Formularkonvertierung (AFCS) konfigurieren können, um die Konvertierung von PDF-Formularen in adaptive Formulare zu automatisieren. Dieser Artikel richtet sich an IT- und AEM-Admins in Ihrem Unternehmen. Personen, die diesen Artikel lesen, sollten mit den folgenden Technologien vertraut sein:
+Dieser Artikel beschreibt, wie AEM-Admins den Dienst für die automatisierte Formularkonvertierung (AFCS) konfigurieren können, um die Konvertierung von PDF-Formularen in adaptive Formulare zu automatisieren. Dieser Artikel richtet sich an IT- und AEM-Admins in Ihrem Unternehmen. In den bereitgestellten Informationen wird davon ausgegangen, dass alle, die diesen Artikel lesen, mit den folgenden Technologien vertraut sind:
 
 * Installieren, Konfigurieren und Verwalten von Adobe Experience Manager- und AEM-Paketen,
 
@@ -141,7 +141,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
 
 ### Benutzer zur Gruppe „forms-users“ hinzufügen {#adduserstousergroup}
 
@@ -250,7 +250,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
 
    Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich abgerufen* angezeigt.
 
-   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. ](/help/using/assets/healthy-dialog.png)
 
 1. Klicken Sie auf **Schließen**.
 
@@ -314,3 +314,4 @@ Die Seite zum **Erstellen der Konfiguration für die automatisierte Formularkonv
    ```
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Die Cloud-Konfiguration wird erstellt. Damit ist Ihre AEM Forms-Instanz bereit, ältere Formulare in adaptive Formulare zu konvertieren.
+

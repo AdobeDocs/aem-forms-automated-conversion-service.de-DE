@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 88%
+source-wordcount: '506'
+ht-degree: 86%
 
 ---
 
 # Versionshinweise
 
-Dienst für die automatische Formularkonvertierung wird ständig verbessert. Besuchen Sie diese Seite regelmäßig, um über die neuesten Entwicklungen auf dem Laufenden zu bleiben. Diese Seite bietet Ihnen Informationen über:
+Dienst für die automatische Formularkonvertierung wird ständig verbessert. Um auf dem Laufenden zu bleiben über die neuesten Entwicklungen, besuchen Sie diese Seite regelmäßig. Diese Seite bietet Ihnen Informationen über:
 
 * Früher Zugang
 * Letzte Veröffentlichungen
@@ -89,3 +89,4 @@ Der Dienst erkennt jetzt Listen mit Aufzählungszeichen und Nummern effizienter.
 Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen der Version AFC-2020.03.1 verwenden zu können.
 
 Wenn Sie bereits über eine Service-Umgebung für die automatische Formularkonvertierung (AEM 6.5 oder AEM 6.5 LTS) verfügen, installieren Sie das neueste Service Pack, das neueste AEM Forms-Add-on-Paket und das neueste Connector-Paket in der genannten Reihenfolge, um die neuesten Funktionen des Konvertierungs-Services zu verwenden. Für AEM Forms as a Cloud Service werden Aktualisierungen automatisch bereitgestellt. Genaue Anweisungen finden Sie unter [Dienst zur automatischen Formularkonvertierung konfigurieren](configure-service.md).
+

@@ -8,18 +8,18 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 99%
+source-wordcount: '1673'
+ht-degree: 96%
 
 ---
 
 # Integrieren eines adaptiven Formulars mithilfe des AEM-Workflows in die Datenbank {#submit-forms-to-database-using-forms-portal}
 
-Mit dem Dienst für die automatisierte Formularkonvertierung (AFCS) können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
+Mit dem Service für die automatische Formularkonvertierung (AFCS) können Sie ein nicht interaktives PDF-Formular, ein AcroForm-Formular oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
 
-Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Für das Formulardatenmodell müssen Sie die Felder des adaptiven Formulars manuell mit dem Formulardatenmodell verknüpfen. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, ordnet der Konvertierungsdienst die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden. Ebenso können Sie nach erfolgreicher Integration in die Datenbank Felder im konvertierten adaptiven Formular konfigurieren, um Werte aus der Datenbank abzurufen und Felder des adaptiven Formulars vorab auszufüllen.
+Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Für das Formulardatenmodell müssen Sie adaptive Formularfelder manuell an das Formulardatenmodell binden. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, ordnet der Konvertierungsdienst die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden. Ebenso können Sie nach erfolgreicher Integration in die Datenbank Felder im konvertierten adaptiven Formular konfigurieren, um Werte aus der Datenbank abzurufen und Felder des adaptiven Formulars vorab auszufüllen.
 
 Die folgende Abbildung zeigt verschiedene Phasen der Integration eines konvertierten adaptiven Formulars in eine Datenbank:
 
@@ -30,7 +30,7 @@ Dieser Artikel gibt Anweisungen zu den einzelnen Schritten für die erfolgreiche
 ## Voraussetzungen {#pre-requisites}
 
 * Einrichten einer AEM 6.5- oder AEM 6.5 LTS-Autoreninstanz
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren Sie den [Dienst für die automatische Formularkonvertierung](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
@@ -233,7 +233,7 @@ Führen Sie die folgenden Schritte aus, um ein Workflow-Modell zum Senden der ad
 
 1. **[!UICONTROL Tippen Sie auf den Schritt Formulardatenmodelldienst aufrufen]** and und anschließend auf ![Konfigurieren](assets/configure_icon.png).
 
-1. Wählen Sie auf der Registerkarte **Formulardatenmodell** das Formulardatenmodell, das Sie im Feld **[!UICONTROL Formulardatenmodellpfad]** angelegt haben, und wählen Sie **[!UICONTROL insert]** aus der Dropdown-Liste **[!UICONTROL Dienst]**.
+1. Wählen Sie auf der Registerkarte ]**Formulardatenmodell**[!UICONTROL  das Formulardatenmodell, das Sie im Feld **[!UICONTROL Formulardatenmodellpfad]** angelegt haben, und wählen Sie **[!UICONTROL insert]** aus der Dropdown-Liste **[!UICONTROL Dienst]**.
 
 1. Wählen Sie auf der Registerkarte **[!UICONTROL Eingabe für Dienst]** die Option **[!UICONTROL Eingabedaten mithilfe von Literal- , Variablen- oder Workflow-Metadaten und einer JSON-Datei bereitstellen]** aus der Dropdown-Liste, aktivieren Sie das Kontrollkästchen **[!UICONTROL Eingabefelder aus Eingabe-JSON zuordnen]** und aktivieren Sie **[!UICONTROL Relativ zur Nutzlast]** und geben Sie **data.xml** als Wert für das Feld **[!UICONTROL JSON-Eingabedokument auswählen mit]** an.
 
@@ -276,3 +276,4 @@ Führen Sie die folgenden Schritte aus, um das adaptive Formular so zu konfiguri
 Sie können das konvertierte adaptive Formular herunterladen mit:
 
 [Datei abrufen](assets/DownloadedFormsPackage_1498226829041200.zip)
+

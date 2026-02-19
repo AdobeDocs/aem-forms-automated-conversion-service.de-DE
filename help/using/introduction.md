@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 90%
+source-wordcount: '739'
+ht-degree: 87%
 
 ---
 
 # Dienst für die automatisierte Formularkonvertierung (AFCS) {#introduction-to-automated-forms-conversion-service}
 
-Der Dienst für die automatisierte Formularkonvertierung (AFCS) beschleunigt die Digitalisierung und Modernisierung der Datenerfassung durch die automatische Konvertierung von PDF-Formularen in adaptive Formulare. Der von Adobe Sensei unterstützte Service konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche, responsive und HTML5-basierte adaptive Formulare. Der Service nutzt die vorhandenen Investitionen in PDF-Formulare und XFA und wendet während der Konvertierung auch entsprechende Validierungen, Stile und Layouts auf adaptive Formularfelder an. Der Service hilft bei Folgendem:
+Der Service für die automatische Formularkonvertierung (AFCS) beschleunigt die Digitalisierung und Modernisierung von Erlebnissen mit Datenerfassung, indem PDF forms automatisch in adaptive Formulare konvertiert wird. Der von Adobe Sensei unterstützte Service konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche, responsive und HTML5-basierte adaptive Formulare. Der Service nutzt die vorhandenen Investitionen in PDF-Formulare und XFA und wendet während der Konvertierung auch entsprechende Validierungen, Stile und Layouts auf adaptive Formularfelder an. Der Service hilft bei Folgendem:
 
 * Einsparung von manuellem Aufwand beim Konvertieren von Druckformularen in adaptive Formulare
 * Anwendung von Mustern und entsprechender Validierungen während der Konvertierung
@@ -25,7 +25,7 @@ Der Dienst für die automatisierte Formularkonvertierung (AFCS) beschleunigt die
 * Gruppieren häufig vorkommender Felder in wiederverwendbare Formularfragmente
 * Aktivierung von Adobe Analytics während der Konvertierung
 
-![Es ist einfach. Sie geben uns die Quellformulare und überlassen alles andere uns. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![Es ist einfach. Sie geben uns die Quellformulare und überlassen alles andere uns. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Einstieg  {#onboarding}
 
@@ -67,3 +67,4 @@ Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PD
 Reale Formulare können komplexe Anforderungen an die Datenerfassung in Bezug auf Feld-Layout, Benennung oder implizite Vorschläge haben, die von der KI/ML-basierten Erkennungslogik möglicherweise nicht genau erfasst werden. Sobald die automatische Konvertierung abgeschlossen ist, können Sie im Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md) das konvertierte Formular überprüfen, erforderliche Aktualisierungen vornehmen und eine verbesserte Ausgabe generieren, die dem gewünschten Ergebnis näher kommt. Nachdem Sie die erforderlichen Änderungen vorgenommen haben, senden Sie das Formular erneut zur Konvertierung.
 
 Die für die automatische Konvertierung benötigte Zeit hängt von verschiedenen Faktoren ab, z. B. der Größe und Komplexität des Eingabeformulars und der Beanspruchung der Verarbeitungswarteschlange des Service. Der Benutzer wird regelmäßig über die Statusanzeige im Ordner/in der Datei über den Fortschritt informiert. Nach Abschluss der Konvertierung wird auch eine E-Mail-Benachrichtigung an die konfigurierte E-Mail-Adresse gesendet.
+

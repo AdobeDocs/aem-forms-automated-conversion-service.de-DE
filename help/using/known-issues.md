@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 97%
+source-wordcount: '831'
+ht-degree: 95%
 
 ---
 
 # Bekannte Probleme und Einschränkungen {#known-issues-limitations}
 
-Überprüfen Sie die folgenden bekannten Probleme und Einschränkungen, bevor Sie mit der Verwendung des Dienstes für die automatisierte Formularkonvertierung (AFCS) von AEM Forms beginnen:
+Überprüfen Sie die folgenden bekannten Probleme und Einschränkungen, bevor Sie mit der Verwendung des AEM Forms Automated Forms Conversion Services (AFCS) beginnen:
 
 ## Bekannte Probleme {#known-issues}
 
@@ -37,7 +37,7 @@ ht-degree: 97%
    * XFA-Skripte werden nicht unterstützt. Zum Beispiel Skripte zum automatischen Generieren von Werten für eine Dropdown-Komponente.
    * Das Metamodell funktioniert nicht für die Auswahlgruppe
    * Option „Auswahlgruppen“ mit einem einzelnen Zeichen werden nicht identifiziert
-   * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, &#x200B;](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
+   * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, ](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
 
 * Beachten Sie Folgendes, wenn Sie die Option **Eingabe AcroForm als Datensatzdokument (DoR) für generierte adaptive Formulare** verwenden:
 
@@ -83,3 +83,4 @@ ht-degree: 97%
 * Farbige PDF-Formulare werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
 * Eigenschaften wie Datenbindung oder Datenmodellschema sind für auf Kernkomponenten basierende adaptive Formulare nicht verfügbar.
 * Das Überprüfen und Korrigieren der konvertierten Formulare ist für auf Kernkomponenten basierende Formulare nicht verfügbar.
+

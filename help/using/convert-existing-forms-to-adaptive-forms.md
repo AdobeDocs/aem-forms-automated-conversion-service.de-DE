@@ -5,9 +5,9 @@ seo-description: Run the Automated Forms Conversion service (AFCS) to convert PD
 contentOwner: khsingh
 role: Admin, Developer
 topic-tags: forms
-feature: Adaptive Forms, Foundation Components, Core Components
+feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 4393ab4c56174f1dd9ad2979ce18b1d18ee09f6b
+source-git-commit: 7edc61317486149ddac3c574a7339af6ffa40a81
 workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 86%
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungs-Workflow und zu Onboarding-Informationen finden Sie unter Dienst für die [automatische Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungs-Workflow und zu Onboarding-Informationen finden Sie unter Dienst für die [automatische Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 

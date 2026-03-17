@@ -82,7 +82,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** Optionen <br> Auswahlgruppen mit anderen Formen als Rahmen oder Kreis werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Auflösung** Ändern Sie <br> Auswahloptionen für Shapes in ein Feld oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und korrigieren“, um die Shapes zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
+| **Muster** Optionen <br> Auswahlgruppen mit anderen Formen als Rahmen oder Kreis werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Auflösung** Ändern Sie <br> Auswahloptionen für Shapes in ein Feld oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und korrigieren“, um die Shapes zu identifizieren. | ![Auswahlfelder &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### Formularfelder {#form-fields}
 

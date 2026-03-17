@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
 workflow-type: tm+mt
-source-wordcount: '2599'
-ht-degree: 83%
+source-wordcount: '2765'
+ht-degree: 81%
 
 ---
 
@@ -25,9 +25,11 @@ Dieser Artikel beschreibt, wie AEM-Admins den Dienst für die automatisierte For
 
 * SMTP-Mail-Server konfigurieren
 =======
-<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
+<!--
+>[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Watch the video or read the article to configure Automated Forms Conversion service (AFCS)** -->
+**Watch the video or read the article to configure Automated Forms Conversion service (AFCS)**
+-->
 
 ## Onboarding{#onboarding}
 
@@ -52,7 +54,7 @@ Bereiten Sie vor der Verwendung des Service Ihre AEM-Autoreninstanz für die Ver
 1. [Laden Sie AEM 6.5 oder AEM 6.5 LTS herunter und installieren Sie sie, oder integrieren Sie AEM Forms as a Cloud Service](#aemquickstart)
 1. (Nur für AEM 6.5 und AEM 6.5 LTS) [Herunterladen und Installieren des neuesten AEM Service Packs](#servicepack)
 1. (Nur für AEM 6.5 und AEM 6.5 LTS) [Laden Sie das neueste Add-On-Paket für AEM Forms herunter und installieren Sie es](#downloadaemformsaddon)
-1. (Optional) [Laden Sie das neueste Connector-Paket herunter und installieren Sie es](#installConnectorPackage)
+1. (Optional) [Herunterladen und Installieren des neuesten Connector-Pakets](#installConnectorPackage)
 1. [Erstellen benutzerdefinierter Designs und Vorlagen (AEM 6.5 / 6.5 LTS) oder Verwenden von Standardwerten (Cloud Service)](#referencepackage)
 
 ### Herunterladen und Installieren von AEM 6.5 oder AEM 6.5 LTS oder Integrieren von AEM Forms as a Cloud Service {#aemquickstart}
@@ -71,25 +73,28 @@ Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird in der AEM-
 
 ### (Nur für AEM 6.5 und AEM 6.5 LTS) Herunterladen und Installieren des neuesten AEM Service Packs {#servicepack}
 
-Laden Sie das aktuelle AEM Service Pack herunter und installieren Sie es. Detaillierte Anweisungen finden Sie in den [Versionshinweisen zu AEM 6.5 Service Pack](https://helpx.adobe.com/de/experience-manager/6-5/release-notes/sp-release-notes.html).
+Laden Sie das neueste AEM Service Pack herunter und installieren Sie es. Detaillierte Anweisungen finden Sie in den [Versionshinweisen zu AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Nur für AEM 6.5 und AEM 6.5 LTS) Herunterladen und Installieren des AEM Forms-Add-on-Pakets  {#downloadaemformsaddon}
 
-Eine AEM-Instanz enthält grundlegende Formularfunktionen. Der Konvertierungs-Service erfordert sämtliche Funktionen von AEM Forms. Laden Sie das AEM Forms-Add-On-Paket herunter und installieren Sie es, um alle Funktionen von AEM Forms nutzen zu können. Das Paket ist erforderlich, um den Konvertierungs-Service einzurichten und auszuführen. Detaillierte Anweisungen finden Sie unter [Installieren und Konfigurieren von Datenerfassungsfunktionen](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi).
+Eine AEM-Instanz enthält grundlegende Formularfunktionen. Der Konvertierungs-Service erfordert sämtliche Funktionen von AEM Forms. Laden Sie das AEM Forms-Add-On-Paket herunter und installieren Sie es, um alle Funktionen von AEM Forms nutzen zu können. Das Paket ist erforderlich, um den Konvertierungs-Service einzurichten und auszuführen. Detaillierte Anweisungen finden Sie unter [Installieren und Konfigurieren von Datenerfassungsfunktionen.](https://experienceleague.adobe.com/de/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
+
 >[!NOTE]
 > Stellen Sie sicher, dass Sie nach der Installation des Add-On-Pakets die obligatorischen Konfigurationen nach der Installation durchführen.
 >
 
-<!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
+<!--
+### (Optional) Download and install connector package  {#installConnectorPackage}
 
-The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1). -->
+The connector package provides early access to the [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) features and improvements delivered in release AFC-2020.03.1. Do not install the package if you do not require feature and improvements delivered in AFC-2020.03.1.  You can [download the connector package from AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+-->
 
 
 ### Erstellen benutzerdefinierter Designs und Vorlagen {#referencepackage}
 
 **AEM Forms as a Cloud Service:** Sie können die vordefinierten Vorlagen verwenden oder benutzerdefinierte Vorlagen erstellen und auf [Service-Konfiguration](#configure-the-cloud-service) verweisen.
 
-**(Nur für AEM 6.5 und AEM 6.5 LTS)** Für den Automated Forms Conversion Service (AFCS) ist mindestens ein Design und eine Vorlage erforderlich, um ein PDF-Formular in ein adaptives Formular zu konvertieren. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten. Anweisungen hierzu finden Sie dort. Wenn Sie AEM 6.5 oder AEM 6.5 LTS im [Produktionsmodus](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/production-ready.html) (Ausführungsmodus „nosamplecontent„) starten, werden die Referenzpakete nicht installiert. Erstellen Sie entweder ein eigenes benutzerdefiniertes Design und eine eigene Vorlage oder laden Sie das [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Paket herunter und installieren Sie es auf Ihrer Autoreninstanz, um Referenz-Designs und Vorlagen zu erhalten. Zeigen Sie dann auf [Dienstkonfiguration](#configure-the-cloud-service), um die Vorlagen und Designs zu verwenden, bevor Sie den Dienst verwenden.
+**(Nur für AEM 6.5 und AEM 6.5 LTS)** Für den Automated Forms Conversion Service (AFCS) ist mindestens ein Design und eine Vorlage erforderlich, um ein PDF-Formular in ein adaptives Formular zu konvertieren. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten. Anweisungen hierzu finden Sie dort. Wenn Sie AEM 6.5 oder AEM 6.5 LTS im [Produktionsmodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (Ausführungsmodus „nosamplecontent„) starten, werden die Referenzpakete nicht installiert. Erstellen Sie entweder ein eigenes benutzerdefiniertes Design und eine eigene Vorlage oder laden Sie das [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Paket herunter und installieren Sie es auf Ihrer Autoreninstanz, um Referenz-Designs und Vorlagen zu erhalten. Zeigen Sie dann auf [Dienstkonfiguration](#configure-the-cloud-service), um die Vorlagen und Designs zu verwenden, bevor Sie den Dienst verwenden.
 
 ## Konfigurieren von Zugriff und Berechtigungen
 
@@ -141,7 +146,8 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+-->
 
 ### Benutzer zur Gruppe „forms-users“ hinzufügen {#adduserstousergroup}
 
@@ -166,13 +172,13 @@ Geben Sie im Profil des AEM-Benutzers, der den Service ausführen soll, eine E-M
 Nachdem Admins Ihnen Entwicklerzugriff gewährt haben, können Sie Ihre AEM Forms-Instanz mit dem in Adobe Cloud ausgeführten Dienst für die automatisierte Formularkonvertierung (AFCS) verbinden.
 Führen Sie die folgenden Schritte aus, um Ihre AEM Forms-Instanz dem Dienst für die automatisierte Formularkonvertierung (AFCS) zu verbinden:
 
-[&#x200B;1. Service-APIs in der Adobe Developer Console konfigurieren](#configure-the-service-apis-on-adobe-developer-console)
+[&#x200B;1. Service-APIs in Adobe Developer Console konfigurieren](#configure-the-service-apis-on-adobe-developer-console)
 
-[&#x200B;2. Adobe IMS-Konfigurationen erstellen](#2-create-adobe-ims-configurations)
+[&#x200B;2. Erstellen von Adobe IMS-Konfigurationen](#2-create-adobe-ims-configurations)
 
 [&#x200B;3. Konfiguration für automatisierte Formularkonvertierung erstellen](#3-create-automated-forms-conversion-configuration)
 
-### &#x200B;1. Service-APIs in der Adobe Developer Console konfigurieren
+### &#x200B;1. Service-APIs in Adobe Developer Console konfigurieren
 
 Um den Dienst für die automatisierte Formularkonvertierung (AFCS) zu verwenden, erstellen Sie ein Projekt und fügen Sie dem Projekt in der Adobe Developer Console das API des **Dienstes für die automatisierte Formularkonvertierung** hinzu. Durch die Integration werden ein API-Schlüssel, Client-Geheimnis, die ID des technischen Kontos, Umfang und Organisations-ID.
 Gehen Sie wie folgt vor, um das API des Dienstes für die automatisierte Formularkonvertierung in Adobe Developer Console zu konfigurieren:
@@ -207,7 +213,7 @@ Gehen Sie wie folgt vor, um das API des Dienstes für die automatisierte Formula
 
    ![Details zu OAuth-Anmeldedaten](/help/using/assets/oauth-credentials-details.png)
 
-### &#x200B;2. Adobe IMS-Konfigurationen erstellen
+### &#x200B;2. Erstellen von Adobe IMS-Konfigurationen
 
 
 Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu erstellen. Verwenden Sie die **Details zu OAuth-Anmeldedaten**, um den API-Schlüssel, das Client-Geheimnis, die ID des technischen Kontos, die Umfang und die Organisations-ID abzurufen.
@@ -250,7 +256,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
 
    Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich abgerufen* angezeigt.
 
-   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. ](/help/using/assets/healthy-dialog.png)
 
 1. Klicken Sie auf **Schließen**.
 

@@ -1,10 +1,16 @@
 ---
-source-git-commit: 92b1366802dddba6fbf53411697015843e8250da
+source-git-commit: 9d3cbf490f9a3b3526b0ad299cefb0b8d4755776
 workflow-type: tm+mt
-source-wordcount: '7'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
-# ARCHIVIERT
+# Dokumentation zum Service für die automatisierte Konvertierung in AEM Forms
 
-Dieses Repository wurde nach <https://github.com/Adobe-Enterprise-Docs/aem-forms-automated-conversion-service.de-DE> migriert
+Dies ist das Repository für die Dokumentation zum Service für automatisierte Konvertierung in AEM Forms.
+
+Ihre Beiträge zur Dokumentation sind willkommen. Siehe die folgenden Ressourcen:
+
+* [contributor.md](contributing.md) Einen Überblick darüber, wie Sie zur Dokumentation beitragen können.
+* [guidelines.md](guidelines.md) Einen Überblick darüber, was an Beiträgen erwartet wird und wie Sie Ihre Dokumentationsbeiträge zusammenstellen.
+* [code-of-conduct.md](code-of-conduct.md) Einen Überblick über die Verhaltensnormen, die wir von Ihnen erwarten, wenn Sie zu diesem Dokumentationsprojekt beitragen.

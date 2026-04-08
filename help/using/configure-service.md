@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2764'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Dieser Artikel beschreibt, wie AEM-Admins den Dienst für die automatisierte For
 
 * Verwenden von Linux®- und Microsoft® Windows®-Betriebssystemen,
 
-* SMTP-Mail-Server konfigurieren
+* Konfigurieren von SMTP-Mailservern
 =======
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
@@ -73,7 +73,7 @@ Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird in der AEM-
 
 ### (Nur für AEM 6.5 und AEM 6.5 LTS) Herunterladen und Installieren des neuesten AEM Service Packs {#servicepack}
 
-Laden Sie das neueste AEM Service Pack herunter und installieren Sie es. Detaillierte Anweisungen finden Sie in den [Versionshinweisen zu AEM 6.5 Service Pack](https://helpx.adobe.com/de/experience-manager/6-5/release-notes/sp-release-notes.html).
+Laden Sie das neueste AEM Service Pack herunter und installieren Sie es. Detaillierte Anweisungen finden Sie in den [Versionshinweisen zu AEM 6.5 Service Pack](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html).
 
 ### (Nur für AEM 6.5 und AEM 6.5 LTS) Herunterladen und Installieren des AEM Forms-Add-on-Pakets  {#downloadaemformsaddon}
 
@@ -94,7 +94,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** Sie können die vordefinierten Vorlagen verwenden oder benutzerdefinierte Vorlagen erstellen und auf [Service-Konfiguration](#configure-the-cloud-service) verweisen.
 
-**(Nur für AEM 6.5 und AEM 6.5 LTS)** Für den Automated Forms Conversion Service (AFCS) ist mindestens ein Design und eine Vorlage erforderlich, um ein PDF-Formular in ein adaptives Formular zu konvertieren. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten. Anweisungen hierzu finden Sie dort. Wenn Sie AEM 6.5 oder AEM 6.5 LTS im [Produktionsmodus](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/production-ready.html) (Ausführungsmodus „nosamplecontent„) starten, werden die Referenzpakete nicht installiert. Erstellen Sie entweder ein eigenes benutzerdefiniertes Design und eine eigene Vorlage oder laden Sie das [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Paket herunter und installieren Sie es auf Ihrer Autoreninstanz, um Referenz-Designs und Vorlagen zu erhalten. Zeigen Sie dann auf [Dienstkonfiguration](#configure-the-cloud-service), um die Vorlagen und Designs zu verwenden, bevor Sie den Dienst verwenden.
+**(Nur für AEM 6.5 und AEM 6.5 LTS)** Für den Automated Forms Conversion Service (AFCS) ist mindestens ein Design und eine Vorlage erforderlich, um ein PDF-Formular in ein adaptives Formular zu konvertieren. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten. Anweisungen hierzu finden Sie dort. Wenn Sie AEM 6.5 oder AEM 6.5 LTS im [Produktionsmodus](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html) (Ausführungsmodus „nosamplecontent„) starten, werden die Referenzpakete nicht installiert. Erstellen Sie entweder ein eigenes benutzerdefiniertes Design und eine eigene Vorlage oder laden Sie das [AEM Forms Reference Assets](https://experience.adobe.com/#/downloads/content/software-distribution/de/aemcloud.html)-Paket herunter und installieren Sie es auf Ihrer Autoreninstanz, um Referenz-Designs und Vorlagen zu erhalten. Zeigen Sie dann auf [Dienstkonfiguration](#configure-the-cloud-service), um die Vorlagen und Designs zu verwenden, bevor Sie den Dienst verwenden.
 
 ## Konfigurieren von Zugriff und Berechtigungen
 
@@ -146,7 +146,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=de#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 -->
 
 ### Benutzer zur Gruppe „forms-users“ hinzufügen {#adduserstousergroup}
@@ -235,7 +235,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
       * **Client-ID**: Kopieren Sie den **API-Schlüssel (Client-ID)** und fügen Sie ihn ein.
       * **Client-Geheimnis**: Kopieren Sie das **Client-Geheimnis** und fügen Sie es ein.
       * **Umfang**: Kopieren Sie den **Umfang** und fügen Sie ihn ein.
-      * **Organisations-ID**: Kopieren Sie die **ID des technischen Kontos** und fügen Sie sie ein.
+      * **Organisations-ID**: Kopieren und Einfügen **Organisations-ID**.
 
      ![Erstellen der Adobe IMS-Konfiguration](/help/using/assets/save-ims-configuration.png)
 
@@ -256,7 +256,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
 
    Bei erfolgreicher Verbindung wird die Meldung *Token erfolgreich abgerufen* angezeigt.
 
-   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![Bei erfolgreicher Verbindung wird die Meldung „Token erfolgreich abgerufen“ angezeigt. ](/help/using/assets/healthy-dialog.png)
 
 1. Klicken Sie auf **Schließen**.
 

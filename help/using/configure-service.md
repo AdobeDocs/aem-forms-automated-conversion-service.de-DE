@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2765'
+source-wordcount: '2764'
 ht-degree: 81%
 
 ---
@@ -23,7 +23,7 @@ Dieser Artikel beschreibt, wie AEM-Admins den Dienst für die automatisierte For
 
 * Verwenden von Linux®- und Microsoft® Windows®-Betriebssystemen,
 
-* SMTP-Mail-Server konfigurieren
+* Konfigurieren von SMTP-Mailservern
 =======
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
@@ -235,7 +235,7 @@ Melden Sie sich bei Ihrer Autoreninstanz an, um die Adobe IMS-Konfigurationen zu
       * **Client-ID**: Kopieren Sie den **API-Schlüssel (Client-ID)** und fügen Sie ihn ein.
       * **Client-Geheimnis**: Kopieren Sie das **Client-Geheimnis** und fügen Sie es ein.
       * **Umfang**: Kopieren Sie den **Umfang** und fügen Sie ihn ein.
-      * **Organisations-ID**: Kopieren Sie die **ID des technischen Kontos** und fügen Sie sie ein.
+      * **Organisations-ID**: Kopieren und Einfügen **Organisations-ID**.
 
      ![Erstellen der Adobe IMS-Konfiguration](/help/using/assets/save-ims-configuration.png)
 

@@ -10,9 +10,15 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ImCKo49r-l9Iq0uOVa16bzA1ga9e-n-Q6Eo4MvB9SB4
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: 967
 ht-degree: 100%
 
 ---
@@ -127,7 +133,7 @@ Wenn Sie ein Acro Form oder ein XFA-basiertes PDF-Formular als Quellformular fü
 
 * oder bearbeiten Sie die Eigenschaften des adaptiven Formulars nach der Konvertierung in ein adaptives Formular, um die Datensatzdokument-Generierung unter Verwendung der Standardvorlage, des Quellformulars als Vorlage oder einer beliebigen anderen Formularvorlage zu ermöglichen
 
-### Aktivieren der Datensatzdokument-Generierung vor der Konvertierung, um Datensatzdokumente mithilfe einer Quellvorlage zu generieren {#use-input-form-as-template-to-generate-document-of-record}
+### Aktivieren der Datensatzdokument-Generierung vor der Konvertierung, um Datensatzdokumente mithilfe einer Quell-Formularvorlage zu generieren {#use-input-form-as-template-to-generate-document-of-record}
 
 1. Wählen Sie die Option **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > Eigenschaften der für die Konvertierung verwendeten Cloud-Konfiguration > **[!UICONTROL Erweitert]** > **[!UICONTROL Datensatzdokument erstellen]**.
 

@@ -8,10 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 100%
+source-wordcount: 2689
+ht-degree: 81%
 
 ---
 
@@ -25,7 +31,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatisierte Formularkonvertierung (AFCS) ist ein Standard-Metamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatisierte Formularkonvertierung (AFCS) in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`.  Sie können auch [hier klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) kann ebenfalls heruntergeladen werden.
+Im Dienst für die automatisierte Formularkonvertierung (AFCS) ist ein Standard-Metamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatisierte Formularkonvertierung (AFCS) in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch [hier klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) kann ebenfalls heruntergeladen werden.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
@@ -114,9 +120,9 @@ Jede Eigenschaft kann ferner Folgendes umfassen:
 
 ![Eigenschaften des Metamodells](assets/meta_model_elements.gif)
 
-Basierend auf den Schlüsselwörtern, auf die mit **aem:affKeyword** verwiesen wird, führt der Konvertierungsdienst eine Suchoperation für die Quellformularfelder durch. Der Konvertierungsdienst wendet die Eigenschaften des JSON-Schemas und zusätzliche Eigenschaften auf die Felder an, die die Suchkriterien erfüllen.
+Basierend auf den Keywords, auf die mit **aem:affKeyword** verwiesen wird, führt der Konvertierungs-Service einen Suchvorgang für die Quellformularfelder durch. Der Konvertierungsdienst wendet die Eigenschaften des JSON-Schemas und zusätzliche Eigenschaften auf die Felder an, die die Suchkriterien erfüllen.
 
-In diesem Beispiel sucht der Konvertierungsdienst im Quellformular nach den Schlüsselwörtern Tel., Telefon geschäftlich, Telefon privat, Mobiltelefon, Telefon, Handy, Telefonnr., Nummer und Telefonnummer. Basierend auf den Feldern, die diese Schlüsselwörter enthalten, wendet der Konvertierungsdienst nach der Konvertierung den Typ, das Muster und aem:afProperties auf die Felder des adaptiven Formulars an.
+In diesem Beispiel sucht der Konvertierungsdienst im Quellformular nach den Schlüsselwörtern Tel., Telefon geschäftlich, Telefon privat, Mobiltelefon, Telefon, Handy, Telefonnr., Nummer und Telefonnummer. Basierend auf den Feldern, die diese Schlüsselwörter enthalten, wendet der Konvertierungs-Service den Typ, das Muster und AEM :afProperties die Felder des adaptiven Formulars nach der Konvertierung an.
 
 ### JSON-Schemaeigenschaften für generierte adaptive Formularfelder {#jsonschemaproperties}
 
@@ -129,7 +135,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
    <th><strong>Beschreibung</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Titel</p></td> 
+   <td><p>title</p></td> 
    <td> 
     <p>Der in der Titeleigenschaft in einem Metamodell erwähnte Text dient als Suchschlüsselwort, um Aktionen für die Felder des generierten adaptiven Formulars auszuführen. Beispiel: Ändern der Beschriftung eines Feldes in einem adaptiven Formular. Weitere Informationen finden Sie unter <strong>Ändern der Beschriftung eines Formularfelds</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
   </tr>
@@ -137,7 +143,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
    <td> 
     <p>Die Eigenschaft „description“ legt den Hilfetext für das Feld im generierten adaptiven Formular fest. Weitere Informationen finden Sie unter <strong>Hilfetext zu einem Formularfeld hinzufügen</strong> unter <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
   </tr>
-  <td><p>type</p></td> 
+  <td><p>Typ</p></td> 
    <td> 
     <p>Die Eigenschaft „type“ definiert den Datentyp für das Feld im generierten adaptiven Formular. Die möglichen Werte für die Eigenschaft „title“ umfassen:</p>
     <ul> 
@@ -149,7 +155,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
   </tr>
   <td><p>pattern</p></td> 
    <td> 
-    <p>Die pattern-Eigenschaft beschränkt den Wert für das Feld im generierten adaptiven Formular basierend auf einem regulären Ausdruck. Beispielsweise beschränkt der folgende Code im Metamodell den Wert für das Feld im generierten adaptiven Formular auf zehn Stellen: <br>"pattern": "/\\d{10}/"<br> Ebenso beschränkt der folgende Code im Metamodell den Wert eines Feldes auf ein bestimmtes Datumsformat.<br> "pattern": "date{DD MMMM, YYYY}",</p> </td> 
+    <p>Die pattern-Eigenschaft beschränkt den Wert für das Feld im generierten adaptiven Formular basierend auf einem regulären Ausdruck. Beispielsweise beschränkt der folgende Code im Metamodell den Wert für das generierte Feld im adaptiven Formular auf zehn Stellen:<br>„pattern“: "/\\d{10}/"<br>Ebenso beschränkt der folgende Code im Metamodell den Wert eines Felds auf ein bestimmtes Datumsformat.<br> „pattern“: „date{DD MMMM, YYYY}",</p> </td> 
   </tr>
   <td><p>format</p></td> 
    <td> 
@@ -166,7 +172,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
 
 Der Dienst für die automatisierte Formularkonvertierung (AFCS) führt während der Konvertierung eine Keyword-Suche im Quellformular durch. Nach dem Filtern der Felder, die die Suchkriterien erfüllen, wendet der Konvertierungsdienst die für diese Felder im Metamodell definierten Eigenschaften auf die Felder im generierten adaptiven Formular an.
 
-Auf Schlüsselwörter wird mit der Eigenschaft **aem:affKeyword** verwiesen.
+Schlüsselwörter werden mit der Eigenschaft **aem:affKeyword** referenziert.
 
 ```
 {
@@ -177,11 +183,11 @@ Auf Schlüsselwörter wird mit der Eigenschaft **aem:affKeyword** verwiesen.
 }
 ```
 
-In diesem Beispiel verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Bankkontonummer** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **type** in den Typ **number**.
+In diesem Beispiel verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des Textes **Bankkontonummer** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **type** in den Typ **number**.
 
 ### Zusätzliche Eigenschaften für Felder im generierten adaptiven Formular {#additionalproperties}
 
-Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden zusätzlichen Eigenschaften für Felder in adaptiven Formularen definieren, die mit dem Dienst für die automatisierte Formularkonvertierung (AFCS) generiert wurden:
+Sie können die **aem:afProperties**-Eigenschaft im Metamodell verwenden, um die folgenden zusätzlichen Eigenschaften für adaptive Formularfelder zu definieren, die mit dem Automated Forms Conversion Service (AFCS) generiert wurden:
 
 <table> 
  <tbody> 
@@ -201,7 +207,7 @@ Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>Mit der Eigenschaft „jcr:title“ mit der Eigenschaft JSON-Schemaeigenschaft „title“ können Sie die Bezeichnung eines adaptiven Formularfelds nach der Konvertierung ändern.<br>Weitere Informationen finden Sie unter <strong>Ändern der Beschriftung eines Formularfelds</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a><br>Informationen zu weiteren Eigenschaften, die Sie mithilfe des JSON-Schemas auf adaptive Formularfelder anwenden können, finden Sie unter <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Erstellen adaptiver Formulare mit dem JSON-Schema</a>.</p>
+    <p>Mit der Eigenschaft „jcr:title“ mit der Eigenschaft JSON-Schemaeigenschaft „title“ können Sie die Bezeichnung eines adaptiven Formularfelds nach der Konvertierung ändern.<br>Weitere Informationen finden Sie unter <strong>Ändern der Beschriftung eines Formularfelds</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a><br>Unter <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">Erstellen adaptiver Formulare mithilfe des JSON</a>Schemas finden Sie Informationen zu weiteren Eigenschaften, die Sie mithilfe des JSON-Schemas auf adaptive Formularfelder anwenden können.</p>
     <p></p></td> 
   </tr>
   <td><p>sling: resourceType und guideNodeClass</p></td> 
@@ -215,7 +221,7 @@ Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden
  </tbody> 
 </table>
 
-## Erstellen eines benutzerdefinierten Metamodells in Ihrer eigenen Sprache {#language-specific-meta-model}
+## Erstellen eines benutzerdefinierten Metamodells in Ihrer eigenen Sprache{#language-specific-meta-model}
 
 Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metamodell können Sie Zuordnungsregeln in der Sprache Ihrer Wahl erstellen. Mit dem Dienst für die automatisierte Formularkonvertierung (AFCS) können Sie Metamodelle in den folgenden Sprachen erstellen:
 
@@ -226,7 +232,7 @@ Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metam
 * Italienisch (it)
 * Portugiesisch (pt-br)
 
-Fügen Sie das Metatag-Tag *aem:Language* oben in einem Metamodell hinzu, um die Sprache anzugeben. Beispiel:
+Fügen Sie das *aem:Language*-Metatag-Tag oben in einem Metamodell hinzu, um die Sprache anzugeben. Zum Beispiel:
 
 ```JSON
 "metaTags": {
@@ -241,14 +247,14 @@ Wenn keine Sprache festgelegt ist, geht der Service davon aus, dass das Metamode
 * Stellen Sie sicher, dass der Name jedes Schlüssels englisch ist. Beispiel: e-mailAddress.
 * Stellen Sie sicher, dass alle Entitätsverweise und vordefinierten Werte des ID-Schlüssels ausschließlich aus ASCII-Zeichen bestehen. Beispiel: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
 * Stellen Sie sicher, dass alle Werte, die den folgenden Schlüsseln entsprechen, in der für das Metamodell festgelegten Sprache vorliegen.
-   * aem:affKeyword
+   * AEM:affKeyword
    * title
    * description
    * enumNames
    * shortDescription
    * validatePictureClauseMessage
 
-  Wenn beispielsweise die Sprache des Metamodells Französisch ist (&quot;aem:Language&quot;: &quot;fr&quot;), stellen Sie sicher, dass alle Beschreibungen und Meldungen in französischer Sprache vorliegen.
+  Wenn beispielsweise die Sprache des Metamodells Französisch ist („aem:Language&quot;: „fr„), stellen Sie sicher, dass alle Beschreibungen und Meldungen in französischer Sprache vorliegen.
 
 * Stellen Sie sicher, dass alle [JSON-Schemaeigenschaften](#jsonschemaproperties) nur unterstützte Werte verwenden. Der Typ „property“ kann beispielsweise nur ausgewählte Werte der Kategorien „Zeichenfolge“, „Zahl“, „Ganzzahl“ und „Boolesch“ umfassen.
 
@@ -262,7 +268,7 @@ Ihre Organisation kann Muster und Überprüfungen zusätzlich zu den im Standard
 
 Der Dienst für die automatisierte Formularkonvertierung (AFCS) verwendet ein Standard-Metamodell, um während der Konvertierung die Felder des Quellformulars Feldern des adaptiven Formulars zuzuordnen. Das Standard-Metamodell befindet sich unter dem folgenden Speicherort:
 
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
+http://<server>:<port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
 Sie können jedoch ein benutzerdefiniertes Metamodell in einem Ordner speichern und die Eigenschaften des Konvertierungsdienstes ändern, sodass das benutzerdefinierte Metamodell während der Konvertierung verwendet wird.
 
@@ -296,7 +302,7 @@ Einige gängige Beispiele für die Verwendung eines benutzerdefinierten Metamode
 
 **Beispiel:** Ändern der Bezeichnung der Bankkontonummer im Formular in „Benutzerdefinierte Kontonummer“ im adaptiven Formular nach der Konvertierung.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst die Eigenschaft **title** als Suchschlüsselwort. Nach dem Abrufen des Texts **Bankkontonummer** im Formular ersetzt der Konvertierungsdienst den Text durch die erwähnte Zeichenfolge **Benutzerdefinierte Kontonummer** mit der Eigenschaft **jcr:title** im Abschnitt **aem:afProperties**.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst die Eigenschaft **title** als Suchschlüsselwort. Nach dem Abrufen des Textes **Bankkontonummer** im Formular ersetzt der Konvertierungsdienst den Text durch die erwähnte Zeichenfolge **Kundenkontonummer** mit der **jcr:title**-Eigenschaft im Abschnitt **aem:afProperties**.
 
 ```
 {
@@ -314,7 +320,7 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst die 
 
 **Beispiel**: Ändern Sie das Feld **Bankkontonummer**, das vor der Konvertierung ein Textfeld im Formular ist, in ein Feld vom Typ „number“ im adaptiven Formular nach der Konvertierung.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Bankkontonummer** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **type** in den Typ „number“.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des Textes **Bankkontonummer** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **type** in den Typ „number“.
 
 ```
 {
@@ -329,7 +335,7 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 **Beispiel**: Fügen Sie dem Feld **Bankkontonummer** des adaptiven Formulars Hilfetext hinzu.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Bankkontonummer** im Formular fügt der Konvertierungsdienst den Hilfetext mithilfe der Eigenschaft **description** zum Feld des adaptiven Formulars hinzu.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des Textes **Bankkontonummer** im Formular fügt der Konvertierungsdienst den Hilfetext mithilfe der Eigenschaft **description** zum Feld des adaptiven Formulars hinzu.
 
 ```
 {
@@ -345,14 +351,14 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 **Beispiel**: Konvertieren Sie das Feld **Land**, das vor der Konvertierung ein Zeichenfolgenfeld ist, in Kontrollkästchen im adaptiven Formular nach der Konvertierung.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld mithilfe der Eigenschaft **Enum** in folgende Kontrollkästchen um:
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld mithilfe der Eigenschaft **enum** in folgende Kontrollkästchen um:
 
 * India
 * England
 * Australia
 * New Zealand
 
-Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Kontrollkästchen-Komponente des adaptiven Formulars zu.
+**sling:resourceType**- und **guideNodeClass**-Eigenschaften ordnen der Komponente des adaptiven Formulars ein Formularfeld zu.
 
 ```
 {
@@ -379,7 +385,7 @@ Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formu
 
 **Beispiel**: Ändern Sie das Format des Felds **E-Mail-Adresse** in ein E-Mail-Format.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **E-Mail-Adresse** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **format** in das E-Mail-Format.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach Abrufen des Textes **E-Mail-Adresse** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **format** in das E-Mail-Format.
 
 ```
 {
@@ -395,7 +401,7 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 **Beispiel 1:** Fügen Sie dem Feld **Postleitzahl** des adaptiven Formulars eine Validierung hinzu.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abruf des Textes **Postleitzahl** im Formular fügt der Konvertierungsdienst dem Feld mithilfe der Eigenschaft **validatePictureClause**, definiert im Abschnitt **aem:afProperties**, eine Validierung hinzu. Gemäß dieser Validierung muss die Eingabe, die Sie nach der Konvertierung für das Feld **Postleitzahl** im adaptiven Formular angeben, sechs Zeichen lang sein.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des **Postleitzahl**-Texts im Formular fügt der Konvertierungsdienst dem Feld eine Validierung mithilfe der **validatePictureClause**-Eigenschaft hinzu, die im Abschnitt **aem:afProperties** definiert ist. Gemäß dieser Validierung muss die Eingabe, die Sie nach der Konvertierung für das Feld **Postleitzahl** im adaptiven Formular angeben, sechs Zeichen lang sein.
 
 ```
 {
@@ -411,7 +417,7 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 **Beispiel 2:** Fügen Sie dem Feld **Bankkontonummer** des adaptiven Formulars eine Validierung hinzu.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abruf des Textes **Bankkontonummer** im Formular fügt der Konvertierungsdienst dem Feld mithilfe der Eigenschaft **mandatory**, definiert im Abschnitt **aem:afProperties**, eine Validierung hinzu. Gemäß dieser Validierung müssen Sie nach der Konvertierung einen Wert für das Feld **Bankkontonummer** angeben, bevor Sie das Formular senden.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des **Bankkontonummer** im Formular fügt der Konvertierungsdienst dem Feld eine Validierung mithilfe der im Abschnitt **AEM** definierten **hinzu:afProperties**. Gemäß dieser Validierung müssen Sie nach der Konvertierung einen Wert für das Feld **Bankkontonummer** angeben, bevor Sie das Formular senden.
 
 ```
 {
@@ -429,14 +435,14 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 **Beispiel**: Konvertieren Sie das Feld **Land**, das vor der Konvertierung ein Zeichenfolgenfolgenfeld im Formular ist, in Dropdown-Optionen im adaptiven Formular nach der Konvertierung.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
 * India
 * England
 * Australia
 * New Zealand
 
-Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
+**sling:resourceType**- und **guideNodeClass**-Eigenschaften ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
 ```
 {
@@ -491,7 +497,7 @@ Um eine zusätzliche Option hinzuzufügen, aktualisieren Sie die Eigenschaft **e
 
 **Beispiel:** Konvertieren Sie das Feld **Adresse** vom Typ „string“ nach der Konvertierung in ein mehrzeiliges Feld im Formular.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Adresse** im Formular wandelt der Dienst das Textfeld mithilfe der Eigenschaft **multiLine**, die im Abschnitt **aem:afProperties** definiert ist, in ein mehrzeiliges Feld um.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungs-Service Text innerhalb von **aem:affKeyword** als Suchbegriff. Nach dem Abrufen des **Adresse**-Texts im Formular wandelt der Service das Textfeld mithilfe der **multiLine**-Eigenschaft, die im Abschnitt **aem) definiert:afProperties**, in ein mehrzeiliges Feld um.
 
 ```
 {

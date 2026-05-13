@@ -8,10 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 96%
+source-wordcount: 1932
+ht-degree: 94%
 
 ---
 
@@ -69,7 +75,7 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
    * Der Dienst ist falsch konfiguriert, die Dienst-URL wird nicht bereitgestellt oder die bereitgestellte Dienst-URL ist falsch. Überprüfen Sie die [Dienstkonfiguration](configure-service.md#configure-the-cloud-service) unter **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]**.
    * Die IMS-Konfiguration ist nicht richtig konfiguriert. Führen Sie eine Integritätsprüfung der IMS-Konfiguration durch, um sicherzustellen, dass sie ordnungsgemäß funktioniert. So überprüfen Sie, ob die IMS-Konfiguration korrekt ist oder nicht:
       1. Wechseln zu `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Wählen Sie die Konfiguration aus. Klicken Sie in der Kopfzeile auf **[!UICONTROL Systemdiagnose]** und dann auf **[!UICONTROL Prüfen]**. Bei Erfolg wird **[!UICONTROL Token erfolgreich abgerufen!]** angezeigt. <br> <br>
+      2. Wählen Sie die Konfiguration aus. Klicken Sie in der Kopfzeile auf **[!UICONTROL Systemdiagnose]** und dann auf **[!UICONTROL Prüfen]**. Bei erfolgreicher Ausführung wird **[!UICONTROL Token erfolgreich abgerufen!]** Nachricht. <br> <br>
 
 1. **Beeinflusst die Verwendung benutzerdefinierter Schriftarten die Konvertierung?**
    <p>Wenn ein nicht-interaktives PDF-Formular in ein adaptives Formular konvertiert wird, werden die Schriftarten in das PDF-Formular eingebettet, um die Konvertierungsqualität zu verbessern. Die Unterstützung für das Einbetten von Schriftarten ist auf nicht-interaktive PDF-Formulare beschränkt. Um die Konvertierung von AcroForm- und XFA-basierten PDF-Formularen zu optimieren, werden Fallback-Schriftarten verwendet.</p> 
@@ -101,8 +107,8 @@ Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie k
    <p>Die Zeitdauer hängt von der Größe und Komplexität der Eingabeformulare und der Anzahl der Anforderungen ab. Der Dienst beabsichtigt, die Wertschöpfungszeit erheblich zu verkürzen, indem PDF-Formulare im Vergleich zum manuellen Konvertieren von Formularen viel schneller in adaptive Formulare konvertiert werden. </p> <br />
 
 1. **Was tun, wenn ein Fehler in Verbindung mit RSA-Bibliotheken auftritt ? Die Fehlermeldung ähnelt der unten genannten Meldung:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+Der oben genannte Fehler tritt auf, wenn die Boot-Delegierung nicht für RSA-/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
    <p> </p>
 
    1. Halten Sie die AEM-Instanz an. Navigieren Sie zum Ordner `[AEM installation directory]\crx-quickstart\conf\`. Öffnen Sie die Datei „sling.properties“ zur Bearbeitung. Wenn Sie `[AEM installation directory]\crx-quickstart\bin\start.bat`zum Starten einer AEM-Instanz verwenden, bearbeiten Sie die sling.properties-Datei unter `[AEM_root]\crx-quickstart\`.
@@ -115,7 +121,7 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
    <p>Sie können den adaptiven Design- oder Stileditor für adaptive Formulare verwenden, um die Groß-/Kleinschreibung eines Felds in einem adaptiven Formular zu ändern. Sie können beispielsweise den Design-Editor öffnen und den Wert der Groß-/Kleinschreibungs-Eigenschaft des gesamten Formulartextes auf Groß-, Klein- oder Höckerschreibweise setzen. Sie können auch die Option CSS-Überschreibung im Design-Editor verwenden, um verschiedene Arten von Stilen zu erstellen.</p>
 
 1. **Kann ich Adobe Sign-Text-Tags mit dem Dienst zur automatischen Formularkonvertierung (AFCS) verwenden?**
-   <p> Wenn Sie den Dienst zur automatisierten Formularkonvertierung (AFCS) verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterzeichnerdetails werden automatisch ausgefüllt. Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
+   <p> Wenn Sie den Dienst zur automatisierten Formularkonvertierung (AFCS) verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterzeichnerdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
 
 1. **Wie erstellt man ein für Adobe Sign aktivierten PDF-Formular?**
    </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>

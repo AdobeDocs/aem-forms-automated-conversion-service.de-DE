@@ -8,10 +8,24 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 87%
+source-wordcount: 769
+ht-degree: 89%
 
 ---
 
@@ -27,7 +41,7 @@ Der Service für die automatische Formularkonvertierung (AFCS) beschleunigt die 
 
 ![Es ist einfach. Sie geben uns die Quellformulare und überlassen alles andere uns. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
 
-## Einstieg  {#onboarding}
+## Onboarding {#onboarding}
 
 Der Service steht AEM 6.5 Forms- und AEM 6.5 LTS Forms On-Premise-Privatkunden sowie Adobe-Managed Service-Unternehmenskunden kostenlos zur Verfügung. Sie können sich an das Adobe Sales-Team oder Ihren Adobe-Support-Mitarbeiter wenden, um Zugriff auf den Service anzufordern. Der Service ist auch für Kunden von AEM Forms as a Cloud Service kostenlos und verfügbar und vorkonfiguriert.
 
@@ -47,9 +61,9 @@ Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird auf Adobe C
 
 ![Workflow](assets/conversion-workflow.png)
 
-### &#x200B;1. Einrichten der Arbeitsumgebung {#set-up-the-environment}
+### &#x200B;1. Einrichten der Umgebung {#set-up-the-environment}
 
-Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird auf Adobe Cloud ausgeführt. [Konfigurieren Sie das Adobe I/O-Konto Ihres Unternehmens und verbinden Sie Ihre lokale AEM](configure-service.md)Instanz mit dem Konvertierungs-Service, der in der Adobe Cloud ausgeführt wird. Für AEM 6.5 und AEM 6.5 LTS müssen Sie die Kernkomponenten für adaptive Formulare aktivieren, wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden. Siehe [Konfigurieren des Service](configure-service.md#referencepackage).
+Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird auf Adobe Cloud ausgeführt. [Konfigurieren Sie das Adobe I/O-Konto Ihrer Organisation und verbinden Sie Ihre lokale AEM-Instanz](configure-service.md) mit dem Konvertierungsdienst, der in Adobe Cloud ausgeführt wird. Für AEM 6.5 und AEM 6.5 LTS müssen Sie die Kernkomponenten für adaptive Formulare aktivieren, wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden. Siehe [Konfigurieren des Service](configure-service.md#referencepackage).
 
 ### &#x200B;2. Konvertieren von PDF-Formularen in adaptive Formulare {#use-the-conversion-service}
 
@@ -62,7 +76,7 @@ Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PD
 * Nehmen Sie die vorgeschlagenen Änderungen in PDF-Formularen vor, wie sie im Artikel [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) beschrieben werden.
 * Lesen Sie den Artikel [Bekannte Probleme](known-issues.md), um Fallstricke zu vermeiden.
 
-### &#x200B;3. Überprüfen der konvertierten Formulare {#review-converted-forms}
+### &#x200B;3. Überprüfen konvertierter Formulare {#review-converted-forms}
 
 Reale Formulare können komplexe Anforderungen an die Datenerfassung in Bezug auf Feld-Layout, Benennung oder implizite Vorschläge haben, die von der KI/ML-basierten Erkennungslogik möglicherweise nicht genau erfasst werden. Sobald die automatische Konvertierung abgeschlossen ist, können Sie im Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md) das konvertierte Formular überprüfen, erforderliche Aktualisierungen vornehmen und eine verbesserte Ausgabe generieren, die dem gewünschten Ergebnis näher kommt. Nachdem Sie die erforderlichen Änderungen vorgenommen haben, senden Sie das Formular erneut zur Konvertierung.
 

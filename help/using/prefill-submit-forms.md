@@ -9,10 +9,25 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/TmEZJSIKPj6f2X5E7X8JY9AL5EGHSPuLhAzQlPdvGGM
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 100%
+source-wordcount: 2692
+ht-degree: 99%
 
 ---
 
@@ -26,13 +41,13 @@ Sie können eine der folgenden Datenquellen mit adaptiven Formularen verwenden, 
 
 Basierend auf der Datenquelle können Sie ein adaptives Formular mit oder ohne Datenmodell erstellen.
 
-In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von Feldwerten und Übermittlungsoptionen beschrieben, nachdem eine Datenquelle ausgewählt und ein adaptives Formular mit dem Konvertierungsdienst generiert wurde.
+In diesem Artikel werden die empfohlenen Workflows zum Vorausfüllen von Feldwerten und Übermittlungsoptionen beschrieben, nachdem eine Datenquelle ausgewählt und ein adaptives Formular mit dem Konvertierungsdienst generiert wurde.
 
 <table> 
  <tbody> 
   <tr> 
    <th><strong>Datenquelle</strong></th> 
-   <th><strong>Empfohlener Arbeitsablauf</strong></th> 
+   <th><strong>Empfohlener Workflow</strong></th> 
   </tr> 
   <tr> 
    <td><p>Formulardatenmodell, OData oder andere Dienste von Drittanbietern</p></td> 
@@ -48,7 +63,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr> 
    <td></td> 
    <td> 
-    <p>Eine schrittweise Anleitung zum Ausführen dieser Arbeitsabläufe finden Sie unter <a href="#sqldatasource">Datenbank, OData oder Dienste von Drittanbietern als Datenquelle verwenden</a>.</p> </td> 
+    <p>Eine schrittweise Anleitung zum Ausführen dieser Workflows finden Sie unter <a href="#sqldatasource">Datenbank, OData oder Dienste von Drittanbietern als Datenquelle verwenden</a>.</p> </td> 
   </tr>
   <tr>
   <td><p>JSON-Schema</p></td> 
@@ -63,7 +78,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td></td> 
    <td> 
-    <p>Eine schrittweise Anleitung zum Ausführen der Arbeitsabläufe finden Sie unter <a href="#jsondatasource">JSON-Schema als Datenquelle verwenden.</p></td> 
+    <p>Eine schrittweise Anleitung zum Ausführen der Workflows finden Sie unter <a href="#jsondatasource">JSON-Schema als Datenquelle verwenden.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -73,7 +88,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
    <tr>
   <td></td> 
    <td> 
-    <p>Eine schrittweise Anleitung zum Ausführen der Arbeitsabläufe finden Sie unter <a href="#jsonwithdatabinding">JSON-Schema als Datenquelle verwenden.</a></p> </td> 
+    <p>Eine schrittweise Anleitung zum Ausführen der Workflows finden Sie unter <a href="#jsonwithdatabinding">JSON-Schema als Datenquelle verwenden.</a></p> </td> 
   </tr>
   <tr>
   <td><p>XSD-Schema</p></td> 
@@ -84,7 +99,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td></td> 
    <td> 
-    <p>Eine schrittweise Anleitung zum Ausführen der Arbeitsabläufe finden Sie unter <a href="#xsddatasource">XSD-Schema als Datenquelle verwenden.</a></p>
+    <p>Eine schrittweise Anleitung zum Ausführen der Workflows finden Sie unter <a href="#xsddatasource">XSD-Schema als Datenquelle verwenden</a>.</p>
     </td> 
   </tr>
  </tbody> 
@@ -246,9 +261,9 @@ Anwendungsfall: Sie generieren unter Verwendung des Dienstes für die automatisi
 Vor dem Ausführen des Anwendungsfalls:
 
 * [Konfigurieren der MySQL-Datenbank als Datenquelle](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [Formulardatenmodell erstellen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [Erstellen des Formulardatenmodells](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-Erstellen Sie basierend auf dem Anwendungsfall das Formulardatenmodell **loanapplication** und binden Sie das Argument des Lesedienstes an einen **[!UICONTROL Literalwert]**. Der Literalwert für die Telefonnummer muss einer der Datensätze sein, die im Schema **applicant** der MySQL-Datenbank konfiguriert wurden. Die Dienste verwenden den Wert als Argument, um Details aus der Datenquelle abzurufen. Sie können auch [Benutzerprofilattribut oder Anforderungsattribut](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) aus der Dropdown-Liste **[!UICONTROL Bindung an]** auswählen
+Erstellen Sie basierend auf dem Anwendungsfall das Formulardatenmodell **loanapplication** und binden Sie das Argument des Lesedienstes an einen **[!UICONTROL Literalwert]**. Der Literalwert für die Telefonnummer muss einer der Einträge sein, die im Schema **applicant** der MySQL-Datenbank konfiguriert wurden. Die Dienste verwenden den Wert als Argument, um Details aus der Datenquelle abzurufen. Sie können auch [Benutzerprofilattribut oder Anforderungsattribut](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) aus der Dropdown-Liste **[!UICONTROL Bindung an]** auswählen
 
 ![Konfigurieren eines Formulardatenmodells](assets/configure_model_object.png)
 
@@ -258,7 +273,7 @@ Erstellen Sie basierend auf dem Anwendungsfall das Formulardatenmodell **loanapp
 
 Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie das konvertierte **Formular für den Beispielkreditantrag** im **[!UICONTROL Ausgabeordner]** und wählen Sie **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie das konvertierte Formular für den **Beispielkreditantrag** im **[!UICONTROL Ausgabeordner]** und wählen Sie **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie auf die Registerkarte **[!UICONTROL Formularmodell]** den Eintrag **[!UICONTROL Formulardatenmodell]** aus der Dropdown-Liste **[!UICONTROL Wählen aus]** und tippen Sie auf **[!UICONTROL Formulardatenmodell auswählen]**, um das Formulardatenmodell **loanapplication** auszuwählen. Tippen Sie auf **[!UICONTROL Speichern und Schließen]**, um das Formular zu speichern.
 1. Wählen Sie das **Beispielformular für einen Kreditantrag** und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf der Registerkarte **[!UICONTROL Inhalt]** auf das Konfigurationssymbol:
@@ -339,7 +354,7 @@ Führen Sie die folgenden Schritte aus:
 
    Wählen Sie im Feld „Bindungsverweis“ die Option **Antragsteller** > **Name** aus und tippen Sie auf das ![Symbol „Fertig“](assets/save_icon.svg), um die Eigenschaften zu speichern. Erstellen Sie auf ähnliche Weise eine Datenbindung für **Adresse**, **Telefonnummer**, **E-Mail**, **Beruf**, **Jahresgehalt (in Dollar)** und **Anzahl. von abhängigen Familienmitgliedern** mit den JSON-Schemaentitäten.
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag**, das im Ordner **Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 
@@ -360,7 +375,7 @@ Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über Folgen
 
 Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie das konvertierte **Formular für den Beispielkreditantrag** im **[!UICONTROL Ausgabeordner]** und wählen Sie **[!UICONTROL Eigenschaften]**.
+1. Wählen Sie das konvertierte Formular für den **Beispielkreditantrag** im **[!UICONTROL Ausgabeordner]** und wählen Sie **[!UICONTROL Eigenschaften]**.
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Formularmodell]**, wählen Sie **[!UICONTROL Schema]** aus der Dropdown-Liste **[!UICONTROL Formular auswählen]** und tippen Sie auf **[!UICONTROL Schema auswählen]**, um das Schema **loanapplication**, das im lokalen Dateisystem gespeichert ist, hochzuladen. Wählen Sie das Stammelement für das XSD-Schema aus und tippen Sie auf **[!UICONTROL Speichern und Schließen]**, um das Formular zu speichern.
 1. Wählen Sie das **Beispielformular für einen Kreditantrag** und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Textfeld „Name des Antragstellers“ und wählen Sie das ![Symbol zum Konfigurieren](assets/configure_icon.svg) (Konfigurieren).
@@ -391,7 +406,7 @@ Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über ein [a
 
 Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag**, das im Ordner **Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 

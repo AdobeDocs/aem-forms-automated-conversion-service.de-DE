@@ -6,8 +6,8 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 95%
+source-wordcount: '1250'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +24,7 @@ Die folgende Abbildung zeigt verschiedene Phasen der Integration eines konvertie
 
 Dieser Artikel gibt Anweisungen zu den einzelnen Schritten für die erfolgreiche Ausführung all dieser Integrationsstufen.
 
-Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutzerdefinierter Daten- und Metadatendienste zur Integration einer Forms Portal-Seite in eine Datenbank. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können die Forms Portal-Seite jedoch in jede Datenbank Ihrer Wahl integrieren.
+Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutzerdefinierter Daten- und Metadatendienste zur Integration einer Forms Portal-Seite in eine Datenbank. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können die Forms Portal-Seite jedoch in eine beliebige Datenbank Ihrer Wahl integrieren.
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -32,7 +32,7 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 * Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren des [Dienstes für die automatisierte Formularkonvertierung (AFCS)](configure-service.md)
-* Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
+* Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank integrieren.
 
 ## Einrichten der Verbindung zwischen der AEM-Instanz und der Datenbank {#set-up-connection-aem-instance-database}
 
@@ -269,7 +269,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Laden Sie das folgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-Paket auf Ihr Dateisystem herunter.
 
-[Datei abrufen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Datei abrufen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Gehen Sie zum AEM-Paket-Manager unter *http://[host]:[port]/crx/packmgr/*.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.

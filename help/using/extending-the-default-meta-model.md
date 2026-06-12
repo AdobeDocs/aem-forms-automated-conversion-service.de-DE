@@ -144,7 +144,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
    <th><strong>Beschreibung</strong></th> 
   </tr> 
   <tr> 
-   <td><p>title</p></td> 
+   <td><p>Titel</p></td> 
    <td> 
     <p>Der in der Titeleigenschaft in einem Metamodell erwähnte Text dient als Suchschlüsselwort, um Aktionen für die Felder des generierten adaptiven Formulars auszuführen. Beispiel: Ändern der Beschriftung eines Feldes in einem adaptiven Formular. Weitere Informationen finden Sie unter <strong>Ändern der Beschriftung eines Formularfelds</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
   </tr>
@@ -152,7 +152,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
    <td> 
     <p>Die Eigenschaft „description“ legt den Hilfetext für das Feld im generierten adaptiven Formular fest. Weitere Informationen finden Sie unter <strong>Hilfetext zu einem Formularfeld hinzufügen</strong> unter <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
   </tr>
-  <td><p>Typ</p></td> 
+  <td><p>type</p></td> 
    <td> 
     <p>Die Eigenschaft „type“ definiert den Datentyp für das Feld im generierten adaptiven Formular. Die möglichen Werte für die Eigenschaft „title“ umfassen:</p>
     <ul> 

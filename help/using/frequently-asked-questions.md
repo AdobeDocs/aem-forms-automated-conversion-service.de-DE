@@ -25,7 +25,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: 1844
 ht-degree: 94%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 94%
 1. **Unterstützt der Dienst schemagebundene XDP-Formulare? Wenn ich ein XDP an ein Schema gebunden habe, muss ich das Schema in XDP einbetten?**
    <p>Ja, der Dienst unterstützt schemagebundene XDP-Formulare und erfordert, dass das Schema in das XDP-Quellformular eingebettet ist. Wenn Sie ein schemagebundenes XDP-Formular konvertieren, generiert der Dienst ein JSON-Schema. Das JSON-Schema ähnelt strukturell dem XSD-Schema von XDP-Quellformularen.</p> <br>
 
-1. **Der Dienst konnte keine Formulare konvertieren. Was ist der Grund und wie kann das Problem behoben werden?**
+1. **Der Dienst konnte keine Formulare konvertieren. Was ist der Grund und wie kann ich das Problem beheben?**
 Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
    * Für die Konvertierung werden gesicherte PDF-Formulare bereitgestellt. Verwenden Sie für die Konvertierung keine kennwortgeschützten oder gesicherten PDF-Formulare.
    * Die Internetverbindung ist unterbrochen. Stellen Sie sicher, dass Sie während der Konvertierung mit dem Internet verbunden sind.
@@ -106,8 +106,8 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
 
    Mithilfe des Metamodells können Sie die Formularobjekte Komponenten Ihrer Wahl in einem adaptiven Formular zuordnen und Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfen für die Komponenten vorkonfigurieren. Alle angegebenen Eigenschaften werden während der Konvertierung angewendet. Sie können das Metamodell verwenden, um allgemeine Eigenschaften auf Felder anzuwenden. Es kann Ihnen helfen, einige sich wiederholende Probleme in verschiedenen Formularen zu reduzieren.<br/><br/>
 
-1. **Welche Optionen gibt es für Formulare mit sensiblen Daten wie personenbezogenen Daten?**
-Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten hoch. Entfernen Sie auch vorausgefüllte Daten, persönlich identifizierbare Informationen (PII), vertrauliche und geschützte Informationen in den Quellformularen. <br/>
+1. **Welche Optionen gibt es für Formulare mit sensiblen Daten wie personenbezogenen Daten (PII)?**
+Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten (PII) hoch. Entfernen Sie außerdem vorausgefüllte Daten, persönlich identifizierbare Informationen (PII), vertrauliche und proprietäre Informationen in Quellformularen. <br/>
 
 1. **Wo sollen Kopf- und Fußzeilen platziert werden?**
    <p>Platzieren Sie Kopf- und Fußzeile in einer adaptiven Formularvorlage. Wenn das Quell-PDF-Formular Kopf- und Fußzeilen enthält, erkennt der Dienst Kopf- und Fußzeilen und ersetzt sie während der Konvertierung durch Kopf- und Fußzeilen, die in der adaptiven Formularvorlage verfügbar sind. Wenn das adaptive Formular eine zusätzliche Kopf- oder Fußzeile enthält, können Sie diese im Editor <a href="review-correct-ui-edited.md">Überprüfen und Korrigieren</a> korrigieren oder entfernen.</p> <br />
@@ -115,9 +115,9 @@ Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie k
 1. **Wie viel Zeit spart der Dienst im Vergleich zum manuellen Planen, Erstellen von Assets (Designs, Vorlagen), Erstellen und Veröffentlichen eines adaptiven Formulars?**
    <p>Die Zeitdauer hängt von der Größe und Komplexität der Eingabeformulare und der Anzahl der Anforderungen ab. Der Dienst beabsichtigt, die Wertschöpfungszeit erheblich zu verkürzen, indem PDF-Formulare im Vergleich zum manuellen Konvertieren von Formularen viel schneller in adaptive Formulare konvertiert werden. </p> <br />
 
-1. **Was tun, wenn ein Fehler in Verbindung mit RSA-Bibliotheken auftritt ? Die Fehlermeldung ähnelt der unten genannten Meldung:** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-Der oben genannte Fehler tritt auf, wenn die Boot-Delegierung nicht für RSA-/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+1. **Was ist zu tun, wenn ein Fehler im Zusammenhang mit RSA-Bibliotheken auftritt? Die Fehlermeldung ähnelt der unten genannten Meldung:** <br/>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+Der oben genannte Fehler tritt auf, wenn die Boot-Delegierung nicht für RSA-/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie die folgenden Schritte aus, um das Problem zu beheben:
    <p> </p>
 
    1. Halten Sie die AEM-Instanz an. Navigieren Sie zum Ordner `[AEM installation directory]\crx-quickstart\conf\`. Öffnen Sie die Datei „sling.properties“ zur Bearbeitung. Wenn Sie `[AEM installation directory]\crx-quickstart\bin\start.bat`zum Starten einer AEM-Instanz verwenden, bearbeiten Sie die sling.properties-Datei unter `[AEM_root]\crx-quickstart\`.

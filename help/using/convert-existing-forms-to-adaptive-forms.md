@@ -19,8 +19,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: 2021
-ht-degree: 84%
+source-wordcount: 1900
+ht-degree: 81%
 
 ---
 
@@ -79,9 +79,9 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
 
    * **[!UICONTROL Wählen Sie eine Cloud-Konfiguration aus]**. Wenn Sie eine Konfiguration auswählen, sind Standardvorlage und -design bereits angegeben. Bei Bedarf können Sie eine andere Vorlage oder ein anderes Design angeben.
    * Geben Sie einen Speicherort an, an dem generierte adaptive Formulare und das entsprechende Schema gespeichert werden sollen. Sie können Standardpfade verwenden oder benutzerdefinierte Pfade angeben.
-   * Verwenden Sie die Option **Adaptive Formular ohne Datenbindungen generieren**, um auszuwählen, ob Sie ein adaptives Formular mit oder ohne Datenmodellbindung(en) generieren möchten.
-Wenn Sie diese Option nicht auswählen, ordnet der Konvertierungsdienst das/die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Das Feld **[!UICONTROL Generiertes Datenmodellschema speichern unter]** zeigt den Standardspeicherort für das erzeugte JSON-Schema. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
-Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach einer erfolgreichen Konvertierung können Sie ein adaptives Formular einem Formulardatenmodell, einem XML-Schema oder einem JSON-Schema zuordnen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+   * Verwenden Sie die Option **Generieren adaptiver Formulare ohne Datenmodellbindungen**, um festzulegen, ob ein adaptives Formular mit oder ohne Datenmodellbindungen generiert werden soll.
+Wenn Sie diese Option nicht auswählen, verknüpft der Konvertierungsdienst die adaptiven Formulare automatisch mit einem JSON-Schema und erstellt eine Datenbindung zwischen den im adaptiven Formular verfügbaren Feldern und dem JSON-Schema. Das Feld **[!UICONTROL Generiertes Datenmodellschema speichern unter]** zeigt den Standardspeicherort für das generierte JSON-Schema an. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
+Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach erfolgreicher Konvertierung können Sie ein adaptives Formular mit einem Formulardatenmodell, XML-Schema oder JSON-Schema verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 

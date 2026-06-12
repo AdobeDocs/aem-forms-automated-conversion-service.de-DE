@@ -10,11 +10,21 @@ level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ce44533e-8ec8-4e11-a9e9-78b0fe561832id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
 source-wordcount: 691
@@ -32,7 +42,7 @@ Das Dokument enthält grundlegende Schritte zur Fehlerbehebung bei häufigen Feh
 
 | Fehler | Beispiel |
 |--- |--- |
-| **Fehlermeldung** <br> Der Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br> **Grund** <br>Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in Adobe Cloud nicht erreichen. <br><br>**Lösung** <br> Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und [erstellen Sie eine neue Konfiguration](configure-service.md#obtainpubliccertificates). <br> Wenn es eine einzelne Konfiguration gibt, verwenden Sie **Konsistenzprüfung**, um die [ zu ](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configurations.png) |
+| **Fehlermeldung** <br> Der Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br> **Grund** <br>Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in Adobe Cloud nicht erreichen. <br><br>**Lösung** <br> Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und [erstellen Sie eine neue Konfiguration](configure-service.md#obtainpubliccertificates). <br> Wenn es eine einzelne Konfiguration gibt, verwenden Sie **Konsistenzprüfung**, um die [&#x200B; zu &#x200B;](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configurations.png) |
 | **Fehlermeldung** <br> Es kann keine Verbindung zum Dienst hergestellt werden.  <br><br>**Grund** <br> In den Cloud-Diensten des Dienstes für die automatisierte Formularkonvertierung (AFCS) wird eine falsche oder keine Dienst-URL erwähnt. <br><br>**Auflösung** <br> Korrigieren Sie die [Dienst-URL](configure-service.md#configure-the-cloud-service) in den Cloud-Diensten des Dienstes für die automatisierte Formularkonvertierung (AFCS). | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/wrong-service-url-configured.png) |
 | **Fehlermeldung** <br> Der Dienst konnte das Formular nicht konvertieren.  <br><br>**Grund** <br> Probleme mit der Netzwerkkonnektivität bei Ihnen, der Dienst ist aufgrund geplanter Wartung oder eines Ausfalls in Adobe Cloud nicht verfügbar. <br><br>**Lösung** <br> Beheben Sie Probleme mit Ihrer Netzwerkverbindung und überprüfen Sie den Status des Dienstes unter https://status.adobe.com/ auf einen geplanten oder ungeplanten Ausfall. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/conversion-failure.png) |
 | **Fehlermeldung** <br> Die Anzahl der Seiten ist größer als 15.  <br><br>**Grund** <br> Das Quellformular ist mehr als 15 Seiten lang.  <br><br>**Lösung** <br> Verwenden Sie Adobe Acrobat, um Formulare mit mehr als 15 Seiten zu teilen. Ein Formular darf nicht mehr als 15 Seiten umfassen. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/number-of-pages.png) |

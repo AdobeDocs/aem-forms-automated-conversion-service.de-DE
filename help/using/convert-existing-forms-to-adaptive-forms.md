@@ -7,34 +7,44 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-TQID: https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0
+TQID: 'https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Beginner
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1900
-ht-degree: 81%
-
+source-wordcount: '2048'
+ht-degree: 84%
 ---
-
 # Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
-Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/de/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Weitere Informationen zu den Funktionen, zum Konvertierungs-Workflow und zum Onboarding finden Sie unter [Service für die automatische Formularkonvertierung](introduction.md).
+Der von Adobe Sensei unterstützte Dienst für die automatisierte Formularkonvertierung (AFCS) von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatisierte Formularkonvertierung (AFCS) diese Formulare problemlos in adaptive Formulare konvertieren. Weitere Informationen zu den Funktionen, zum Konvertierungs-Workflow und zum Onboarding finden Sie unter [Service für die automatische Formularkonvertierung](introduction.md).
 
 ## Voraussetzungen {#pre-requisites}
 
 * [**Konvertierungsdienst konfigurieren**](configure-service.md)
 
 * **Vorlagen und Designs für konvertierte Formulare:**
-   * **AEM Forms as a Cloud Service:** Standardvorlagen und -designs sind verfügbar. Sie können sie für die Konvertierung verwenden oder benutzerdefinierte Vorlagen vorbereiten.
-   * **AEM 6.5 und AEM 6.5 LTS:** Bereiten Sie die [Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html) und [Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html) für die Anwendung auf konvertierte Formulare vor. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten (siehe [Konfigurieren des Service](configure-service.md#referencepackage)). Mithilfe einer Vorlage können Sie ein konsistentes Branding anwenden. AFCS extrahiert keine Kopf- und Fußzeile aus Quell-PDFs - geben Sie sie in der Vorlage für das adaptive Formular an. Durch die Verwendung eines Designs wird ein konsistenter Stil auf alle Formulare angewendet. Wenn Sie einen Ordner für Vorlagen erstellen, wählen Sie für alle die Option **[!UICONTROL Konfigurationen durchsuchen]** aus.
+  * **AEM Forms as a Cloud Service:** Standardvorlagen und -designs sind verfügbar. Sie können sie für die Konvertierung verwenden oder benutzerdefinierte Vorlagen vorbereiten.
+  * **AEM 6.5 und AEM 6.5 LTS:** Bereiten Sie die [Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html) und [Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html) für die Anwendung auf konvertierte Formulare vor. Sie müssen [Kernkomponenten für adaptive Formulare aktivieren](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=de) wenn Sie auf Kernkomponenten basierende Vorlagen und Designs verwenden möchten (siehe [Konfigurieren des Service](configure-service.md#referencepackage)). Mithilfe einer Vorlage können Sie ein konsistentes Branding anwenden. AFCS extrahiert keine Kopf- und Fußzeile aus Quell-PDFs - geben Sie sie in der Vorlage für das adaptive Formular an. Durch die Verwendung eines Designs wird ein konsistenter Stil auf alle Formulare angewendet. Wenn Sie einen Ordner für Vorlagen erstellen, wählen Sie für alle die Option **[!UICONTROL Konfigurationen durchsuchen]** aus.
 
 * **(Optional)** [**Quellformular für PDF-Formulare in Adobe Sign konvertieren**](frequently-asked-questions.md)
 
@@ -79,9 +89,9 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
 
    * **[!UICONTROL Wählen Sie eine Cloud-Konfiguration aus]**. Wenn Sie eine Konfiguration auswählen, sind Standardvorlage und -design bereits angegeben. Bei Bedarf können Sie eine andere Vorlage oder ein anderes Design angeben.
    * Geben Sie einen Speicherort an, an dem generierte adaptive Formulare und das entsprechende Schema gespeichert werden sollen. Sie können Standardpfade verwenden oder benutzerdefinierte Pfade angeben.
-   * Verwenden Sie die Option **Generieren adaptiver Formulare ohne Datenmodellbindungen**, um festzulegen, ob ein adaptives Formular mit oder ohne Datenmodellbindungen generiert werden soll.
-Wenn Sie diese Option nicht auswählen, verknüpft der Konvertierungsdienst die adaptiven Formulare automatisch mit einem JSON-Schema und erstellt eine Datenbindung zwischen den im adaptiven Formular verfügbaren Feldern und dem JSON-Schema. Das Feld **[!UICONTROL Generiertes Datenmodellschema speichern unter]** zeigt den Standardspeicherort für das generierte JSON-Schema an. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
-Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach erfolgreicher Konvertierung können Sie ein adaptives Formular mit einem Formulardatenmodell, XML-Schema oder JSON-Schema verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+   * Verwenden Sie die Option **Adaptive Formular ohne Datenbindungen generieren**, um auszuwählen, ob Sie ein adaptives Formular mit oder ohne Datenmodellbindung(en) generieren möchten.
+     Wenn Sie diese Option nicht auswählen, ordnet der Konvertierungsdienst das/die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Das Feld **[!UICONTROL Generiertes Datenmodellschema speichern unter]** zeigt den Standardspeicherort für das erzeugte JSON-Schema. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
+     Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach einer erfolgreichen Konvertierung können Sie ein adaptives Formular einem Formulardatenmodell, einem XML-Schema oder einem JSON-Schema zuordnen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
 

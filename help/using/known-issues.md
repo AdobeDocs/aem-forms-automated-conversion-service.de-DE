@@ -8,27 +8,38 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-TQID: https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA
+TQID: 'https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 879
+source-wordcount: '879'
 ht-degree: 95%
-
 ---
-
 # Bekannte Probleme und Einschränkungen {#known-issues-limitations}
 
 Überprüfen Sie die folgenden bekannten Probleme und Einschränkungen, bevor Sie mit der Verwendung des AEM Forms Automated Forms Conversion Services (AFCS) beginnen:
@@ -39,19 +50,19 @@ ht-degree: 95%
 * Einige Formularobjekte sind gut sichtbar für das menschliche Auge, sind aber [schwierig für den Dienst zu identifizieren](styles-and-pattern-considerations-and-best-practices.md). Verwenden Sie den [Editor „Überprüfen und Korrigieren“](review-correct-ui-edited.md), um solche Formularobjekte zu identifizieren und zu konvertieren.
 * Editor „Überprüfen und Korrigieren“:
 
-   * Hat keine Aktion „Rückgängig machen“. Die Schaltfläche „Speichern“ speichert die Änderungen dauerhaft.
-   * Unterstützt keine wiederholbaren Bedienfelder für XFA-basierte Formulare.
-   * Wenn Sie mit dem Editor „Überprüfen und korrigieren“ eine Liste in einer Tabelle ändern, wird die Zeilenbreite nicht automatisch angepasst und der Text erstreckt sich möglicherweise in die nächste Zeile der Tabelle.
-   * Die Funktion **[!UICONTROL Mehrspaltiges Layout aus Eingabeformularen automatisch erkennen]** funktioniert nicht mit dem Editor „Überprüfen und Korrigieren“ und Formularfragmenten.
-   * Scribble-Signatur, die mit Editor „Überprüfen und Korrigieren“ erstellt wurde, wird für veröffentlichte adaptive Formulare nicht geladen.
+  * Hat keine Aktion „Rückgängig machen“. Die Schaltfläche „Speichern“ speichert die Änderungen dauerhaft.
+  * Unterstützt keine wiederholbaren Bedienfelder für XFA-basierte Formulare.
+  * Wenn Sie mit dem Editor „Überprüfen und korrigieren“ eine Liste in einer Tabelle ändern, wird die Zeilenbreite nicht automatisch angepasst und der Text erstreckt sich möglicherweise in die nächste Zeile der Tabelle.
+  * Die Funktion **[!UICONTROL Mehrspaltiges Layout aus Eingabeformularen automatisch erkennen]** funktioniert nicht mit dem Editor „Überprüfen und Korrigieren“ und Formularfragmenten.
+  * Scribble-Signatur, die mit Editor „Überprüfen und Korrigieren“ erstellt wurde, wird für veröffentlichte adaptive Formulare nicht geladen.
 
 
 * Für XFA-basierte Formulare:
-   * Das Extrahieren von Fragmenten aus einem XFA-basierten Formular wird nicht unterstützt.
-   * XFA-Skripte werden nicht unterstützt. Zum Beispiel Skripte zum automatischen Generieren von Werten für eine Dropdown-Komponente.
-   * Das Metamodell funktioniert nicht für die Auswahlgruppe
-   * Option „Auswahlgruppen“ mit einem einzelnen Zeichen werden nicht identifiziert
-   * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, &#x200B;](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
+  * Das Extrahieren von Fragmenten aus einem XFA-basierten Formular wird nicht unterstützt.
+  * XFA-Skripte werden nicht unterstützt. Zum Beispiel Skripte zum automatischen Generieren von Werten für eine Dropdown-Komponente.
+  * Das Metamodell funktioniert nicht für die Auswahlgruppe
+  * Option „Auswahlgruppen“ mit einem einzelnen Zeichen werden nicht identifiziert
+  * Wenn das Quelldokument ein dynamisches XFA-Dokument (.XDP) ist und es [das Verhalten von XFA-Eigenschaften in einem adaptiven Formular definiert, ](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)wird die Präsenz-Eigenschaft des Quelldokuments nicht berücksichtigt. Wenn beispielsweise ein Feld im Quelldokument als ausgeblendet markiert ist und ein Skript das Feld sichtbar macht, bleibt das Feld im ausgegebenen adaptiven Formular sichtbar.
 
 * Beachten Sie Folgendes, wenn Sie die Option **Eingabe AcroForm als Datensatzdokument (DoR) für generierte adaptive Formulare** verwenden:
 

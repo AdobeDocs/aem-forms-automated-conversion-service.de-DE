@@ -4,13 +4,16 @@ description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 91%
-
 ---
-
 
 # Integrieren adaptiver Formulare in die Datenbank mithilfe des Formularportals {#submit-forms-to-database-using-forms-portal}
 
@@ -29,7 +32,7 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 ## Voraussetzungen {#pre-requisites}
 
 * Einrichten einer AEM 6.5- oder AEM 6.5 LTS-Autoreninstanz
-* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
+* Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
 * Konfigurieren des [Dienstes für die automatisierte Formularkonvertierung (AFCS)](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank integrieren.

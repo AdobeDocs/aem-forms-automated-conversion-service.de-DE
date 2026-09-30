@@ -52,7 +52,7 @@ Der Service für die automatische Formularkonvertierung (AFCS) beschleunigt die 
 * Gruppieren häufig vorkommender Felder in wiederverwendbare Formularfragmente
 * Aktivierung von Adobe Analytics während der Konvertierung
 
-![Es ist einfach. Sie stellen uns die Quellformulare bereit und überlassen uns alles andere. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![Es ist einfach. Sie stellen uns die Quellformulare bereit und überlassen uns alles andere. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 

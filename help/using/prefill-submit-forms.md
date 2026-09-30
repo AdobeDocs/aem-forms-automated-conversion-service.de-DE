@@ -366,7 +366,7 @@ Führen Sie die folgenden Schritte aus:
 
    Wählen Sie im Feld „Bindungsverweis“ die Option **Antragsteller** > **Name** aus und tippen Sie auf das ![Symbol „Fertig“](assets/save_icon.svg), um die Eigenschaften zu speichern. Erstellen Sie auf ähnliche Weise eine Datenbindung für **Adresse**, **Telefonnummer**, **E-Mail**, **Beruf**, **Jahresgehalt (in Dollar)** und **Anzahl. von abhängigen Familienmitgliedern** mit den JSON-Schemaentitäten.
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag**, das im Ordner **Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 
@@ -418,7 +418,7 @@ Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über ein [a
 
 Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag**, das im Ordner **Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 

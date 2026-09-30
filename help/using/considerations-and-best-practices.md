@@ -8,13 +8,16 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
-
 ---
-
 
 # Best Practices und Hinweise {#do-not-publish-best-practices-and-considerations}
 
@@ -44,7 +47,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
    <td style="text-align: left;"><img src="assets/dense%20form.png" /></td> 
   </tr>
   <tr>
-   <td><p><strong>Muster</strong></p> <p>Der Dienst unterstützt keine gescannten Formulare.</p> <p> </p> <p><strong>Lösung</strong></p> <p>Verwenden Sie keine gescannten Formulare. </p> </td> 
+   <td><p><strong>Muster</strong></p> <p>Der Dienst unterstützt keine gescannten Formulare.</p> <p> </p> <p><strong>Auflösung</strong></p> <p>Verwenden Sie keine gescannten Formulare. </p> </td> 
    <td><img src="assets/scanned-form.jpg" /></td> 
   </tr>
   <tr>

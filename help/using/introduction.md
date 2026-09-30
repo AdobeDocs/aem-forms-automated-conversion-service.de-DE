@@ -8,38 +8,51 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-TQID: https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U
+TQID: 'https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 769
+source-wordcount: '769'
 ht-degree: 89%
-
 ---
-
 # Dienst für die automatisierte Formularkonvertierung (AFCS) {#introduction-to-automated-forms-conversion-service}
 
 Der Service für die automatische Formularkonvertierung (AFCS) beschleunigt die Digitalisierung und Modernisierung von Erlebnissen mit Datenerfassung, indem PDF forms automatisch in adaptive Formulare konvertiert wird. Der von Adobe Sensei unterstützte Service konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche, responsive und HTML5-basierte adaptive Formulare. Der Service nutzt die vorhandenen Investitionen in PDF-Formulare und XFA und wendet während der Konvertierung auch entsprechende Validierungen, Stile und Layouts auf adaptive Formularfelder an. Der Service hilft bei Folgendem:
 
 * Einsparung von manuellem Aufwand beim Konvertieren von Druckformularen in adaptive Formulare
-* Anwendung von Mustern und entsprechender Validierungen während der Konvertierung
+* Anwendung von Mustern und entsprechenden Validierungen während der Konvertierung
 * Generieren eines Datensatzdokuments während der Konvertierung
 * Gruppieren häufig vorkommender Felder in wiederverwendbare Formularfragmente
 * Aktivierung von Adobe Analytics während der Konvertierung
 
-![Es ist einfach. Sie geben uns die Quellformulare und überlassen alles andere uns. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![Es ist einfach. Sie stellen uns die Quellformulare bereit und überlassen uns alles andere. Wir stellen Ihnen ansprechende adaptive Formulare bereit. Sie können die Ausgabe jederzeit zu Ihrer Zufriedenheit verändern. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Onboarding {#onboarding}
 
@@ -51,13 +64,13 @@ Adobe ermöglicht den Zugriff für Ihre Organisation und stellt der in Ihrer Org
 
 Der Service unterstützt nicht-interaktive PDF-Formulare, Formulare, die mit Adobe Acrobat erstellt wurden (AcroForms), und XFA-basierte Formulare, die mit AEM Forms oder Adobe LiveCycle erstellt wurden.
 
-Der Service unterstützt auch Adobe Sign-aktivierte PDF-Formulare. Wenn das Ausgangs-PDF-Formular mit Adobe Sign-Text-Tags versehen ist, bewahrt der Service alle Adobe Sign-Informationen während der Konvertierung auf und verknüpft die im Ausgangs-PDF vorhandenen Unterzeichnerinformationen mit den entsprechenden anpassbaren Formularfeldern. Die Funktion ist nur für AcroForms verfügbar.
+Der Service unterstützt auch Adobe Sign-aktivierte PDF-Formulare. Wenn das Quell-PDF-Formular Adobe Sign-Text-Tags enthält, bewahrt der Service während der Konvertierung alle zu Adobe Sign gehörenden Informationen auf und verknüpft die im Quell-PDF vorhandenen Unterzeichnerinformationen mit den entsprechenden Feldern des adaptiven Formulars. Die Funktion ist nur für AcroForms verfügbar.
 
 Der Service kann Formulare auf Deutsch, Englisch, Französisch Italienisch, Portugiesisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare auch mithilfe des [AEM-Übersetzungs-Workflows](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 
 ## KonvertierungsWorkflow  {#conversion-workflow}
 
-Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird auf Adobe Cloud ausgeführt. Sie verbinden Ihre AEM-Instanz mit dem Service, laden Formulare in Ihre AEM-Instanz hoch und starten die Konvertierung. Der vollständige Konvertierungsprozess läuft ab wie folgt:
+Der Dienst für die automatisierte Formularkonvertierung (AFCS) wird auf Adobe Cloud ausgeführt. Sie verbinden Ihre AEM-Instanz mit dem Service, laden Formulare in Ihre AEM-Instanz hoch und starten die Konvertierung. Der vollständige Konvertierungsprozess läuft wie folgt ab:
 
 ![Workflow](assets/conversion-workflow.png)
 
@@ -72,7 +85,7 @@ Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PD
 * Laden Sie nicht die gesicherten Formulare hoch. Der Service konvertiert keine kennwortgeschützten und verschlüsselten Formulare.
 * Laden Sie keine gescannten, farbigen, ausgefüllten Formulare oder Formulare in einer anderen Sprache als Deutsch, Englisch, Französisch, Italienisch, Portugiesisch und Spanisch hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine PDF-Formulare mit Leerzeichen im Dateinamen hoch.
-* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) hoch. Der Service konvertiert keine PDF-Portfolios in ein adaptives Formular.
+* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) hoch. Der Service konvertiert kein PDF-Portfolio in ein adaptives Formular.
 * Nehmen Sie die vorgeschlagenen Änderungen in PDF-Formularen vor, wie sie im Artikel [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) beschrieben werden.
 * Lesen Sie den Artikel [Bekannte Probleme](known-issues.md), um Fallstricke zu vermeiden.
 
@@ -80,5 +93,5 @@ Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PD
 
 Reale Formulare können komplexe Anforderungen an die Datenerfassung in Bezug auf Feld-Layout, Benennung oder implizite Vorschläge haben, die von der KI/ML-basierten Erkennungslogik möglicherweise nicht genau erfasst werden. Sobald die automatische Konvertierung abgeschlossen ist, können Sie im Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md) das konvertierte Formular überprüfen, erforderliche Aktualisierungen vornehmen und eine verbesserte Ausgabe generieren, die dem gewünschten Ergebnis näher kommt. Nachdem Sie die erforderlichen Änderungen vorgenommen haben, senden Sie das Formular erneut zur Konvertierung.
 
-Die für die automatische Konvertierung benötigte Zeit hängt von verschiedenen Faktoren ab, z. B. der Größe und Komplexität des Eingabeformulars und der Beanspruchung der Verarbeitungswarteschlange des Service. Der Benutzer wird regelmäßig über die Statusanzeige im Ordner/in der Datei über den Fortschritt informiert. Nach Abschluss der Konvertierung wird auch eine E-Mail-Benachrichtigung an die konfigurierte E-Mail-Adresse gesendet.
+Die für die automatische Konvertierung benötigte Zeit hängt von verschiedenen Faktoren ab, z. B. der Größe und Komplexität des Eingabeformulars und der Beanspruchung der Verarbeitungswarteschlange des Service. Benutzende werden regelmäßig über die Statusanzeige für den Ordner bzw. die Datei über den Fortschritt informiert. Nach Abschluss der Konvertierung wird auch eine E-Mail-Benachrichtigung an die konfigurierte E-Mail-Adresse gesendet.
 
